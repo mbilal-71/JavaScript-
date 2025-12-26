@@ -5,8 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
   <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-</head>
-<body>
+</head><body>
 
 
 <!-- 
@@ -116,15 +115,21 @@
 //   document.write("Invalid operator");
 // }
 
-var a = Number (prompt("Enter 1st no"))
-var op = prompt ("enter operator(+,-,*,/)")
-var b = Number (prompt("enter 2nd no"))
+var a = Number (prompt("Enter 1st no"));
+var op = prompt ("enter operator(+,-,*,/)");
+var b = Number (prompt("enter 2nd no"));
 
-
-
-
-
-
+if (op === "+") {
+  document.write(a + b);
+} else if (op === "-") {
+  document.write(a - b);
+} else if (op === "*") {
+  document.write(a * b);
+} else if (op === "/") {
+  document.write(a / b);
+} else {
+  document.write("Invalid operator");
+}
 
 
 
