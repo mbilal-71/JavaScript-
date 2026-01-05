@@ -243,38 +243,74 @@
 //   document.write("<br>");
 // }
 
-for (var a = 1; a <= 5; a++) {
+// for (var a = 1; a <= 5; a++) {
 
-  for(c = 1; c<=5-a; c++){
-    document.write("&nbsp;");
-  }
+//   // for(c = 1; c<=5-a; c++){
+//   //   document.write("&nbsp;");
+//   // }
 
-  for (var b = 1; b <= a; b++) {
-    document.write(b + " ");
-  }
-  document.write("<br>");
-}
+//   for (var b = 1; b <= a; b++) {
+//     document.write(a + " ");
+//   }
+//   document.write("<br>");
+// }
  
 // for (var a = 5; a>=1; a-- ){
 //   for (var c =5; c>=1+a; c--){
 //   document.write("&nbsp;")
 // }
 //   for (var b = 1; b<=a; b++){
-//     document.write("*" + " ");
+//     document.write(b + " ");
 //   }
 //   document.write("<br>");
 // }
 
-console.log("Hello");
+// for (var a = 5; a>=5; a--){
+// for (var b = 5; b<=a; b++){
+//   document.write(b);
+// }
+// document.writ("<br>");
+// }
+
+// function clicked(){
+//   document.write("Hello World")
+// } clicked();
 
 
+// for ( var a=1; a<=4; a++){
+//   for (var b=1; b<=a; b++){
+//     document.write(`${a*b} `);
+//   }
+//   document.write("<br>")
+// }
 
+// let n= Number(prompt("Enter a number"));
+// let i,j;
+// document.write(`prime no list is <br>`)
+// for(i=2;i<=n;i++){
+//   for (j=2; j<=i-1;j++){
+//     if(i%j===0){
+//       break;
+//     }
+//   }
+// if (i===j){
+//   document.write(i + "<br>");
+// }
+// }
 
-
-
-
-
-
+let n= Number(prompt("Enter a number"));
+let i,j;
+document.write(`Prime No list upto ${n} is <br>`)
+for(i=2;i<=n;i++){
+  for(j=2;j<=i-1;j++){
+    if (i%j==0){
+      break;
+    }
+  }
+if(i===j){
+  document.write(i + "<br>")
+}
+}
 
 
 
