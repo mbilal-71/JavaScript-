@@ -1,374 +1,318 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Java Script Practice</title>
+  </head>
+  <body>
+    <!-- [PART OF DRIVING CHECK FUNCTION WITH INNER HTML] -->
 
-
-
-<!-- <p id="result"></p>
+    <!-- <p id="result"></p>
 <input type="text" id="any" placeholder= "How old are you?">
 <button onclick="checkdrivingEligibility()">Check</button> -->
 
+    <script>
 
-<script>
+// [VARABLE IN JS,(Again declear and assign both possible)]:
 
-// // let Ahmed = "Hello World  <br>";
-// // document.write(Ahmed);
-// let Bilal = "Hello world";
-// document.write(Bilal);
+      // var A = "5 <br>" ;
+      // document.write(A);
+      // var A = 5;
+      // document.write(A);
 
+      // var A = 1
+      // var B=  2
+      // // var C= 10
+      // document.write(Number(A) + Number(B));
 
-// var A = "5 <br>" ;
-// document.write(A);
-// var A = 5;
-// document.write(A);
+// [LET IN JS,(Can assign again but can't declear)]:
 
-// var A = 1
-// var B=  2
-// // var C= 10
-// document.write(Number(A) + Number(B));
-  
+      // // let Ahmed = "Hello World  <br>";
+      // // document.write(Ahmed);
+      // let Bilal = "Hello world";
+      // document.write(Bilal);
 
+// [CONSTANT IN JS,(Can't assign and declear both again)]:
 
-// const A = 10;
-// const B = 20;
+      // const A = 10;
+      // const B = 20;
 
-// document.write(A + "<br>");
-// document.write(B + "<br>");
-// document.write(A = B);
+      // document.write(A + "<br>");
+      // document.write(B + "<br>");
+      // document.write(A = B);
 
-// let Age = 16
-// if(18<=Age && Age<=60){
-//     document.write("You are eligible for voting");
-// }
-// else{
-//     document.write("You are not eligible for voting");
-// }
+// [VOTING CHECK FUNCTION WITH IF/ELSE]:
 
+      // let Age = 16
+      // if(18<=Age && Age<=60){
+      //     document.write("You are eligible for voting");
+      // }
+      // else{
+      //     document.write("You are not eligible for voting");
+      // }
 
+// [IF/ELSE DRIVING CHECK FUNCTION WITH INNER HTML]:
 
+       // function checkdrivingEligibility() {
+      //     let age = document.getElementById("any").value;
+      //     let result = document.getElementById("result");
 
-// function checkdrivingEligibility() {
-//     let age = document.getElementById("any").value;
-//     let result = document.getElementById("result");
-    
-//     if (age >= 18) {
-//         result.innerHTML = "You are eligible to drive.";
-//     } else {
-//         result.innerHTML = "You are not eligible to drive.";
-//     }
-// }                           
+      //     if (age >= 18) {
+      //         result.innerHTML = "You are eligible to drive.";
+      //     } else {
+      //         result.innerHTML = "You are not eligible to drive.";
+      //     }
+      // }
 
-// let age = 17;
-// let result = age > 18 ? "yes" : "no";
-// document.write(result);
+// [TERNARY OPERATOR]:
 
+      // let age = 17;
+      // let result = age > 18 ? "yes" : "no";
+      // document.write(result);
 
-// alert ("hello");
+// [ALERT BOX]:
 
-// var value = confirm("Do you like apple?")
-// var result = value? "yes i like" : "i dont like";
+      // alert ("hello");
 
-// let name = prompt ("Bilal:");
-// document.write(name)
+      // var value = confirm("Do you like apple?")
+      // var result = value? "yes i like" : "i dont like";
 
-// let marks = 40; 
-// if (marks>=90 && marks <=100) {
-//   document.write("A+");
-// } else if (marks>=80){
-// document.write("B");
-// } else if (marks>=60 && marks<=79) {
-//   document.write("C")
-// } else if (marks<50) {document.write("Fail")}
+// [PROMPT BOX]:
 
+      // let name = prompt ("Write any thing!:");
+      // document.write(name)
 
-// var a = prompt (15)
-// var b = prompt (10)
-// if (op == '+'){
-//   document.write(a+b);
-// }
+// [GRADING SYSTEM IF/ELSE]:
 
+      // let marks = 40;
+      // if (marks>=90 && marks <=100) {
+      //   document.write("A+");
+      // } else if (marks>=80){
+      // document.write("B");
+      // } else if (marks>=60 && marks<=79) {
+      //   document.write("C")
+      // } else if (marks<50) {document.write("Fail")}
 
+// [ADDITIONAL OPERATOR]:
 
-// var a = Number(prompt("enter first number"));
-// var op = prompt("Enter operator (+, -, *, /)");
-// var b = Number(prompt("enter second number"));
+      // var a = prompt (15)
+      // var b = prompt (10)
+      // if (op == '+'){
+      //   document.write(a+b);
+      // }
 
-// if (op === "+") {
-//   document.write(a + b);
-// }
-// else if (op === "-") {
-//   document.write(a - b);
-// }
-// else if (op === "*") {
-//   document.write(a * b);
-// }
-// else if (op === "/") {
-//   document.write(a / b);
-// }
-// else {
-//   document.write("Invalid operator");
-// }
+// [CALCULATOR USING OPERATORS]:
 
-// var a = Number (prompt("Enter 1st no"));
-// var op = prompt ("enter operator(+,-,*,/)");
-// var b = Number (prompt("enter 2nd no"));
+      // var a = Number(prompt("enter first number"));
+      // var op = prompt("Enter operator (+, -, *, /)");
+      // var b = Number(prompt("enter second number"));
 
-// if (op === "+")
-//  {document.write (a+b);
-//     } else if 
-//     (op === "-") {
-//         document.write(a-b);
-//     } else if 
-//     (op === "*") {
-//         document.write(a*b);
-//     } else if (op === "/") {
-//         document.write(a/b);
-//     } else {
-//         document.write("invalid operator");
-//     }
+      // if (op === "+") {
+      //   document.write(a + b);
+      // }
+      // else if (op === "-") {
+      //   document.write(a - b);
+      // }
+      // else if (op === "*") {
+      //   document.write(a * b);
+      // }
+      // else if (op === "/") {
+      //   document.write(a / b);
+      // }
+      // else {
+      //   document.write("Invalid operator");
+      // }
 
+// [(*FUNCTIONS WITH PARAMETER*)]:
 
-// document.write("Hello");
-// newline();
-// document.write("World");
-// newline();
-// document.write("how are you");
-// }
+// [*NEWLINE FUNCTION]:
 
-// function newline(){
-//   document.write("<br>");
-// }
+      // document.write("Hello");
+      // newline();
+      // document.write("World");
+      // newline();
+      // document.write("how are you");
+      // }
 
-// function greet(Ahmed,Ali){
-//   document.write("how are you" + "   " + Ahmed + "   " + Ali);
-// }
-  // greet("Ahmed","Ali")
+      // function newline(){
+      //   document.write("<br>");
+      // }
 
+// [*GREET FUNCTION]:
 
-// function newline() {
-//   document.write("<br>");
-// }
-// function greet(name1,name2){
-//   document.write("How are you?" + "  " + name1 + "  " + name2);
-// }
-// function sum(a,b){
-//   document.write(a+b);
-// }
-// greet("Ahmed","Ali");
-// newline();
-// newline();
+      // function greet(Ahmed,Ali){
+      //   document.write("How are you?" + "   " + Ahmed + "   " + Ali);
+      // }
+      //   greet("Ahmed","Ali")
 
-// sum(15,20);
-// newline();
-// sum(10,15);
+// [*FUNCTION GREET WITH NEWLINE]:
 
-// let a = Number(prompt("Enter first number"));
-// let b = Number(prompt("Enter second number"));
+      // function newline() {
+      //   document.write("<br>");
+      // }
+      // function greet(name1,name2){
+      //   document.write("How are you?" + "  " + name1 + "  " + name2);
+      // }
+      // greet("Ahmed","Ali");
+      // newline();
+      // newline();
 
-// let sum = a + b;
-// document.write("Sum = " + sum);
+// [*FUNCTION SUM WITH NEWLINE]:
 
-// let a = Number (prompt("Enter 1st no"));
-// let b = Number (prompt("Enter 2nd no"));
-// let multiply = (a*b)
-// {
-//   document.write("Ans =" + multiply)
-// }
+      // function sum(a,b){
+      //   document.write(a+b);
+      // }
+      // sum(15,20);
+      // newline();
+      // sum(10,15);
 
-// function print(){
-//   document.write("What's Up?")
-// }
+// [*SUM FUNCTION]:
 
-// SWITCH
-// let x = prompt ("Which fruit do you like?")
-// switch (x) {
-//   case "apple":
-//     document.write("I like apples."); break;
-//     case "mango":
-//       document.write("I like mangoes."); break;
-//       default:
-//         document.write("I like all Fruits");
-//               }
+      // let a = Number(prompt("Enter first number"));
+      // let b = Number(prompt("Enter second number"));
 
-// for (var i = 100; i>0; i= i-1){
-//   document.write(i + "<br> ");
-// }
+      // let sum = a + b;
+      // document.write("Sum = " + sum);
 
-// var i = 1;
-// while (i <= 5) {
-//   document.write(i + "<br>");
-//   i++;
-// }
-// var i = 1;
-// do {
-//   document.write(i + "<br>");
-//   i++;
-// } while (i <= 5);
+// [*MULTIPLICATION]:
 
-// function sum (a,b){
-//   return a+b;
-// }
-// let s= (sum(10,20));
-// document.write(s);
+      // let a = Number (prompt("Enter 1st no"));
+      // let b = Number (prompt("Enter 2nd no"));
+      // let multiply = (a*b)
+      // {
+      //   document.write("Ans =" + multiply)
+      // }
 
-// var a = 1;
-// while(a<=100){
-//   document.write(a + "<br>");
-//   a+=1;
-// }
+// [PRINT FUNCTION]:
 
-        // for (let a = 1; a<=100 ; a+=10) {
-        //   for (var b = a; b<a+10; b+=1){
-        //     document.write(b + "   ");
-        //   }
-        //   document.write("<br>");
-        // }
+      // function print(){
+      //   document.write("What's Up?")
+      // }
 
-// for (let a = 1; a <=5; a +=1) {
-//   for (let b = a; b < a + 5; b+=1) {
-//     document.write(b + "    |    ");
-//   }
-//   document.write("<br>");
+// [SWITCH]:
+      // let x = prompt ("Which fruit do you like?")
+      // switch (x) {
+      //   case "apple":
+      //     document.write("I like apples."); break;
+      //     case "mango":
+      //       document.write("I like mangoes."); break;
+      //       default:
+      //         document.write("I like all Fruits");
+      //               }
 
-// for (var a = 1; a<=5; a+=1){
-//   for (var b = 1; b<=a; b++){
-//     document.write(b);
-//   }
-//   document.write("<br>");
-// }
+// [FOR LOOP]:
+
+      // for (var i = 100; i>0; i= i-1){
+      //   document.write(i + "<br> ");
+      // }
+
+// [WHILE LOOP]:
+
+      // var i = 1;
+      // while (i <= 5) {
+      //   document.write(i + "<br>");
+      //   i++;
+      // }
+
+// [DO/WHILE LOOP]:
+
+      // var i = 1;
+      // do {
+      //   document.write(i + "<br>");
+      //   i++;
+      // } while (i <= 5);
+
+// [FUNCTION WITH RETURN]:
+
+      // function sum (a,b){
+      //   return a+b;
+      // }
+      // let s= (sum(10,20));
+      // document.write(s);
+
+// [NESTED LOOP]:
+
+// [Counting upto 100]:
+
+      // for (let a = 1; a<=100 ; a+=10) {
+      //   for (var b = a; b<a+10; b+=1){
+      //     document.write(b + " |  ");
+      //   }
+      //   document.write("<br>");
+      // }
+
+// [Counting upto 10]:
+
+      // for (let a = 1; a <= 5; a += 1) {
+      //   for (let b = a; b <= a + 5; b += 1) {
+      //     document.write(b + "    |    ");
+      //   }
+      //   document.write("<br>");
+      // }
+
+// [Example]:
+
+      // for (var a = 1; a<=5; a+=1){
+      //   for (var b = 1; b<=a; b++){
+      //     document.write(b);
+      //   }
+      //   document.write("<br>");
+      // }
+
+// [STARS EXAMPLE]:
+
+for (var a = 5; a>=1; a-- ){
+  for (var c =5; c>=1+a; c--){
+  document.write("&nbsp;")
+}
+  for (var b = 1; b<=a; b++){
+    document.write(a + " ");
+  }
+  document.write("<br>");
+}
 
 // for (var a = 1; a <= 5; a++) {
-
-//   // for(c = 1; c<=5-a; c++){
-//   //   document.write("&nbsp;");
-//   // }
+//  for(c = 1; c<=5-a; c++){
+//    document.write("&nbsp;");
+//    }
 
 //   for (var b = 1; b <= a; b++) {
-//     document.write(a + " ");
-//   }
-//   document.write("<br>");
-// }
- 
-// for (var a = 5; a>=1; a-- ){
-//   for (var c =5; c>=1+a; c--){
-//   document.write("&nbsp;")
-// }
-//   for (var b = 1; b<=a; b++){
-//     document.write(b + " ");
-//   }
-//   document.write("<br>");
-// }
-
-// for (var a = 5; a>=5; a--){
-// for (var b = 5; b<=a; b++){
-//   document.write(b);
-// }
-// document.writ("<br>");
-// }
-
-// function clicked(){
-//   document.write("Hello World")
-// } clicked();
-
-
-// for ( var a=1; a<=4; a++){
-//   for (var b=1; b<=a; b++){
-//     document.write(`${a*b} `);
-//   }
-//   document.write("<br>")
-// }
-
-// let n= Number(prompt("Enter a number"));
-// let i,j;
-// document.write(`prime no list is <br>`)
-// for(i=2;i<=n;i++){
-//   for (j=2; j<=i-1;j++){
-//     if(i%j===0){
-//       break;
+//     document.write("*" + " ");
+//      }
+//    document.write("<br>");
 //     }
-//   }
-// if (i===j){
-//   document.write(i + "<br>");
-// }
-// }
-
-let n= Number(prompt("Enter a number"));
-let i,j;
-document.write(`Prime No list upto ${n} is <br>`)
-for(i=2;i<=n;i++){
-  for(j=2;j<=i-1;j++){
-    if (i%j==0){
-      break;
-    }
-  }
-if(i===j){
-  document.write(i + "<br>")
-}
-}
 
 
 
+// [CLICKED FUNCTION]:
 
+      // function clicked(){
+      //   document.write("Hello World")
+      // } clicked();
 
+      // for ( var a=1; a<=4; a++){
+      //   for (var b=1; b<=a; b++){
+      //     document.write(`${a*b} `);
+      //   }
+      //   document.write("<br>")
+      // }
 
+// [PRIME NO IN JS WITH NESTED LOOP]:
 
-
-// for(var a = 1; a<=5; a+=1){
-//   for(var b=1; b<=a; b++){
-//     document.write(b + "  |  ");
-//   }
-//   document.write("<br>");
-// }
-// let rows = 9;
-
-// for (let i = 1; i <= rows; i++) {
-//   let stars;
-
-//   if (i === 1 || i === rows) {
-//     stars = 5;
-//   } else if (i === 2 || i === 3 || i === 7 || i === 8) {
-//     stars = 3;
-//   } else if (i === 4 || i === 6) {
-//     stars = 2;
-//   } else {
-//     stars = 1;
-//   }
-
-//   let spaces = Math.floor((5 - stars) / 2);
-
-//   for (let s = 1; s <= spaces; s++) {
-//     document.write("&nbsp;&nbsp;");
-//   }
-
-//   for (let j = 1; j <= stars; j++) {
-//     document.write("* ");
-//   }
-
-//   document.write("<br>");
-// }
-
-// for (var a = 5; a>=1; a--){
-//   for(var b = 1; b<=a; b++){
-//     document.write(b);
-//   }
-//   document.write("<br>")
-// }
-// for (var a = 1; a <= 3; a++) {
-//   for (var b = 1; b <= 3; b++) {
-//     for (var c = 1; c <= 3; c++) {
-//       for (var d = 1; d <= 3; d++) {
-//         document.write(a);
-//       }
-//       document.write("<br>")
-//     }
-//   }
-// }
+      // let n= Number(prompt("Enter a number"));
+      // let i,j;
+      // document.write(`Prime No list upto ${n} is <br>`)
+      // for(i=2;i<=n;i++){
+      //   for(j=2;j<=i-1;j++){
+      //     if (i%j==0){
+      //       break;
+      //     }
+      //   }
+      // if(i===j){
+      //   document.write(i + "<br>")
+      // }
+      // }
 
 
 
@@ -376,10 +320,7 @@ if(i===j){
 
 
 
-
-
-</script>
-
-
-</body>
+      
+    </script>
+  </body>
 </html>

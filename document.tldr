@@ -90,6 +90,37 @@
 			"typeName": "pointer"
 		},
 		{
+			"x": 413.38207504284804,
+			"y": 333.1092144295974,
+			"rotation": 0,
+			"isLocked": false,
+			"opacity": 1,
+			"meta": {},
+			"id": "shape:ySSQCJCGn0DLACLEeNI36",
+			"type": "draw",
+			"props": {
+				"segments": [
+					{
+						"type": "free",
+						"points": "AAAAAAA4"
+					}
+				],
+				"color": "black",
+				"fill": "none",
+				"dash": "draw",
+				"size": "m",
+				"isComplete": true,
+				"isClosed": false,
+				"isPen": false,
+				"scale": 1,
+				"scaleX": 1,
+				"scaleY": 1
+			},
+			"parentId": "page:page",
+			"index": "aJXfA6PV",
+			"typeName": "shape"
+		},
+		{
 			"x": 68,
 			"y": 612.9999961853027,
 			"rotation": 0,
@@ -222,9 +253,9 @@
 			"typeName": "shape"
 		},
 		{
-			"x": 0,
-			"y": -401,
-			"z": 1,
+			"x": 123.33187636732221,
+			"y": -11.178043698589391,
+			"z": 0.8231573208591931,
 			"meta": {},
 			"id": "camera:page:page",
 			"typeName": "camera"
@@ -280,9 +311,7 @@
 		{
 			"editingShapeId": null,
 			"croppingShapeId": null,
-			"selectedShapeIds": [
-				"shape:iuJIIBTPKhQ3MzBRwazy0"
-			],
+			"selectedShapeIds": [],
 			"hoveredShapeId": null,
 			"erasingShapeIds": [],
 			"hintingShapeIds": [],
@@ -763,15 +792,11 @@
 		{
 			"followingUserId": null,
 			"opacityForNextShape": 1,
-			"stylesForNextShape": {
-				"tldraw:geo": "heart",
-				"tldraw:color": "black",
-				"tldraw:font": "draw"
-			},
+			"stylesForNextShape": {},
 			"brush": null,
 			"scribbles": [],
 			"cursor": {
-				"type": "default",
+				"type": "cross",
 				"rotation": 0
 			},
 			"isFocusMode": false,
@@ -781,7 +806,7 @@
 			"screenBounds": {
 				"x": 0,
 				"y": 0,
-				"w": 644,
+				"w": 1049.5999755859375,
 				"h": 754.4000244140625
 			},
 			"insets": [
@@ -799,9 +824,9 @@
 			"isFocused": true,
 			"devicePixelRatio": 1.25,
 			"isCoarsePointer": false,
-			"isHoveringCanvas": false,
+			"isHoveringCanvas": true,
 			"openMenus": [],
-			"isChangingStyle": true,
+			"isChangingStyle": false,
 			"isReadonly": false,
 			"meta": {},
 			"duplicateProps": null,
