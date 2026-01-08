@@ -340,9 +340,9 @@
 
       // [Ex#2]:
 
-      // function newline(){
-      // document.write("<br>")
-      //  }
+      function newline() {
+        document.write("<br>");
+      }
 
       // let fruits = ["apple", "banana", "mango", "Strawbery"];
       // document.write(fruits[0]);
@@ -424,11 +424,36 @@
 
       // [ARRAY METHODS]:
 
+      // [New Array()]:
+
+      // var arr= new Array([1,2,3,4);
+      // document.write(arr.indexOf(2));
       // document.write("<br>")
       // document.write(arr[0][3]);
 
+      // [arr.indexOf]:
+
       // var arr = [10, 20, 30, 40];
       // document.write(arr.indexOf(20));
+
+      // [arr.sort/ reverse]:
+
+      // var arr= [3,2,1,4]
+      // document.write(arr.sort());
+      // newline();
+      // document.write(arr.sort().reverse());
+
+      var arr = [5, 2, 9, 1, 7];
+      arr.sort(function (a, b) {
+        return b - a;
+      });
+      document.write(arr);
+
+      // var arr = [1, 10, 2, 20];
+      // arr.sort(function(a, b) {
+      //   return b - a;
+      // });
+      // document.write(arr);
     </script>
   </body>
 </html>
