@@ -340,9 +340,9 @@
 
       // [Ex#2]:
 
-      function newline() {
-        document.write("<br>");
-      }
+      // function newline() {
+      //   document.write("<br>");
+      // }
 
       // let fruits = ["apple", "banana", "mango", "Strawbery"];
       // document.write(fruits[0]);
@@ -443,17 +443,57 @@
       // newline();
       // document.write(arr.sort().reverse());
 
-      var arr = [5, 2, 9, 1, 7];
-      arr.sort(function (a, b) {
-        return b - a;
-      });
-      document.write(arr);
-
-      // var arr = [1, 10, 2, 20];
-      // arr.sort(function(a, b) {
-      //   return b - a;
+      // var arr = [5, 2, 9, 1, 7];
+      // arr.sort(function (a, b) {
+      //   return a-b;
       // });
       // document.write(arr);
+
+      //  var arr = [5,4,8,1]
+      //  arr.sort(function(a,b){
+      //   return b-a;
+      //  });
+      //  document.write(arr[0])
+
+      // [arr.pop/push]:
+
+      // var arr = [10, 20, 30, 40];
+      // arr.pop();
+      // document.write(arr);
+
+      // var arr= [5,6,7]
+      // arr.push(8);
+      // document.write(arr)
+
+      // [MULTI DIMENSIONAL ARRAY]:
+
+      // var ary = [
+      //   ["Amir", "Male", 21, "BSCS"],
+      //   ["Asim", "Male", 21, "BSSE"],
+      //   ["Ahmed", "Male", 21, "BSCS"],
+      //   ["Bilal", "Male", 21, "BSSE"],
+      // ];
+      // document.write(ary[0][0]);
+
+      // for (var a = 0; a < ary.length; a++) {
+      //   for (b = 0; b < ary[a].length; b++) {
+      //     document.write(ary[a][b]);
+      //   }
+      //   document.write("<br>");
+
+      var ary = [
+        ["Amir", "Male", 21, "BSCS"],
+        ["Asim", "Male", 21, "BSSE"],
+        ["Ahmed", "Male", 21, "BSCS"],
+        ["Bilal", "Male", 21, "BSSE"],
+      ];
+
+      for (var a = 0; a < ary.length; a++) {
+        for (var b = 0; b < ary[a].length; b++) {
+          document.write(ary[a][b] + " | ");
+        }
+        document.write("<br>");
+      }
     </script>
   </body>
 </html>
