@@ -134,9 +134,9 @@
       // document.write("how are you");
       // }
 
-      // function newline(){
-      //   document.write("<br>");
-      // }
+      function newline() {
+        document.write("<br>");
+      }
 
       // [*GREET FUNCTION]:
 
@@ -477,23 +477,48 @@
 
       // for (var a = 0; a < ary.length; a++) {
       //   for (b = 0; b < ary[a].length; b++) {
-      //     document.write(ary[a][b]);
+      //     document.write(ary[a][b] + " | ");
       //   }
       //   document.write("<br>");
 
-      var ary = [
-        ["Amir", "Male", 21, "BSCS"],
-        ["Asim", "Male", 21, "BSSE"],
-        ["Ahmed", "Male", 21, "BSCS"],
-        ["Bilal", "Male", 21, "BSSE"],
-      ];
+      // var ary = [
+      //   ["Amir", "Male", 21, "BSCS"],
+      //   ["Asim", "Male", 21, "BSSE"],
+      //   ["Ahmed", "Male", 21, "BSCS"],
+      //   ["Bilal", "Male", 21, "BSSE"],
+      // ];
 
-      for (var a = 0; a < ary.length; a++) {
-        for (var b = 0; b < ary[a].length; b++) {
-          document.write(ary[a][b] + " | ");
-        }
-        document.write("<br>");
-      }
+      // for (var a = 0; a < ary.length; a++) {
+      //   for (var b = 0; b < ary[a].length; b++) {
+      //     document.write(ary[a][b] + " | ");
+      //   }
+      //   document.write("<br>");
+      // newline();
+      // }
+
+      //  [OBJECTS]:
+
+      //     var obj = {
+      //   name: "Amir",
+      //   age: 21,
+      //   gender: "Male"
+      // };
+
+      // document.write(obj.name);
+
+      // var obj = {name:"Amir",age:21,gender:"Male"}
+      // document.write(obj.name);
+
+      //  var obj2 = new Object();
+      //  obj2.name = "Asim"
+      //  document.write(obj2.name);
+
+      //  var currentDate = new Date;
+      //   document.write(currentDate);
+
+      var ary = new Object();
+      ary.name = "amir";
+      document.write(ary.name);
     </script>
   </body>
 </html>
