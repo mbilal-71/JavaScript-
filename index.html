@@ -1,549 +1,580 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Java Script Practice</title>
-  </head>
-  <body>
-    <!-- [PART OF DRIVING CHECK FUNCTION WITH INNER HTML] -->
 
-    <!-- <p id="result"></p>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Java Script Practice</title>
+</head>
+
+<body>
+  <!-- <h1 id="h1">Hello World!</h1>
+  <p class="text">Paragraph</p>
+  <div>Div 1</div> -->
+
+  <!-- [PART OF DRIVING CHECK FUNCTION WITH INNER HTML] -->
+  <!-- <p id="result"></p>
 <input type="text" id="any" placeholder= "How old are you?">
 <button onclick="checkdrivingEligibility()">Check</button> -->
 
-    <script>
-      // [VARABLE IN JS,(Again declear and assign both possible)]:
+  <script>
+    // [VARABLE IN JS,(Again declear and assign both possible)]:
 
-      // var A = "5 <br>" ;
-      // document.write(A);
-      // var A = 5;
-      // document.write(A);
-
-      // var A = 1
-      // var B=  2
-      // // var C= 10
-      // document.write(Number(A) + Number(B));
-
-      // [LET IN JS,(Can assign again but can't declear)]:
-
-      // // let Ahmed = "Hello World  <br>";
-      // // document.write(Ahmed);
-      // let Bilal = "Hello world";
-      // document.write(Bilal);
-
-      // [CONSTANT IN JS,(Can't assign and declear both again)]:
-
-      // const A = 10;
-      // const B = 20;
-
-      // document.write(A + "<br>");
-      // document.write(B + "<br>");
-      // document.write(A = B);
+    // var A = "5 <br>" ;
+    // document.write(A);
+    // var A = 5;
+    // document.write(A);
+
+    // var A = 1
+    // var B=  2
+    // // var C= 10
+    // document.write(Number(A) + Number(B));
+
+    // [LET IN JS,(Can assign again but can't declear)]:
+
+    // // let Ahmed = "Hello World  <br>";
+    // // document.write(Ahmed);
+    // let Bilal = "Hello world";
+    // document.write(Bilal);
+
+    // [CONSTANT IN JS,(Can't assign and declear both again)]:
+
+    // const A = 10;
+    // const B = 20;
+
+    // document.write(A + "<br>");
+    // document.write(B + "<br>");
+    // document.write(A = B);
 
-      // [VOTING CHECK FUNCTION WITH IF/ELSE]:
-
-      // let Age = 16
-      // if(18<=Age && Age<=60){
-      //     document.write("You are eligible for voting");
-      // }
-      // else{
-      //     document.write("You are not eligible for voting");
-      // }
-
-      // [IF/ELSE DRIVING CHECK FUNCTION WITH INNER HTML]:
-
-      // function checkdrivingEligibility() {
-      //     let age = document.getElementById("any").value;
-      //     let result = document.getElementById("result");
-
-      //     if (age >= 18) {
-      //         result.innerHTML = "You are eligible to drive.";
-      //     } else {
-      //         result.innerHTML = "You are not eligible to drive.";
-      //     }
-      // }
-
-      // [TERNARY OPERATOR]:
-
-      // let age = 17;
-      // let result = age > 18 ? "yes" : "no";
-      // document.write(result);
-
-      // [ALERT BOX]:
-
-      // alert ("hello");
-
-      // var value = confirm("Do you like apple?")
-      // var result = value? "yes i like" : "i dont like";
+    // [VOTING CHECK FUNCTION WITH IF/ELSE]:
+
+    // let Age = 16
+    // if(18<=Age && Age<=60){
+    //     document.write("You are eligible for voting");
+    // }
+    // else{
+    //     document.write("You are not eligible for voting");
+    // }
+
+    // [IF/ELSE DRIVING CHECK FUNCTION WITH INNER HTML]:
+
+    // function checkdrivingEligibility() {
+    //     let age = document.getElementById("any").value;
+    //     let result = document.getElementById("result");
+
+    //     if (age >= 18) {
+    //         result.innerHTML = "You are eligible to drive.";
+    //     } else {
+    //         result.innerHTML = "You are not eligible to drive.";
+    //     }
+    // }
+
+    // [TERNARY OPERATOR]:
+
+    // let age = 17;
+    // let result = age > 18 ? "yes" : "no";
+    // document.write(result);
+
+    // [ALERT BOX]:
+
+    // alert ("hello");
+
+    // var value = confirm("Do you like apple?")
+    // var result = value? "yes i like" : "i dont like";
 
-      // [PROMPT BOX]:
-
-      // let name = prompt ("Write any thing!:");
-      // document.write(name)
-
-      // [GRADING SYSTEM IF/ELSE]:
-
-      // let marks = 40;
-      // if (marks>=90 && marks <=100) {
-      //   document.write("A+");
-      // } else if (marks>=80){
-      // document.write("B");
-      // } else if (marks>=60 && marks<=79) {
-      //   document.write("C")
-      // } else if (marks<50) {document.write("Fail")}
-
-      // [ADDITIONAL OPERATOR]:
-
-      // var a = prompt (15)
-      // var b = prompt (10)
-      // if (op == '+'){
-      //   document.write(a+b);
-      // }
-
-      // [CALCULATOR USING OPERATORS]:
-
-      // var a = Number(prompt("enter first number"));
-      // var op = prompt("Enter operator (+, -, *, /)");
-      // var b = Number(prompt("enter second number"));
-
-      // if (op === "+") {
-      //   document.write(a + b);
-      // }
-      // else if (op === "-") {
-      //   document.write(a - b);
-      // }
-      // else if (op === "*") {
-      //   document.write(a * b);
-      // }
-      // else if (op === "/") {
-      //   document.write(a / b);
-      // }
-      // else {
-      //   document.write("Invalid operator");
-      // }
-
-      // [(*FUNCTIONS WITH PARAMETER*)]:
-
-      // [*NEWLINE FUNCTION]:
-
-      // document.write("Hello");
-      // newline();
-      // document.write("World");
-      // newline();
-      // document.write("how are you");
-      // }
-
-      function newline() {
-        document.write("<br>");
-      }
-
-      // [*GREET FUNCTION]:
-
-      // function greet(Ahmed,Ali){
-      //   document.write("How are you?" + "   " + Ahmed + "   " + Ali);
-      // }
-      //   greet("Ahmed","Ali")
-
-      // [*FUNCTION GREET WITH NEWLINE]:
-
-      // function newline() {
-      //   document.write("<br>");
-      // }
-      // function greet(name1,name2){
-      //   document.write("How are you?" + "  " + name1 + "  " + name2);
-      // }
-      // greet("Ahmed","Ali");
-      // newline();
-      // newline();
-
-      // [*FUNCTION SUM WITH NEWLINE]:
-
-      // function sum(a,b){
-      //   document.write(a+b);
-      // }
-      // sum(15,20);
-      // newline();
-      // sum(10,15);
-
-      // [*SUM FUNCTION]:
-
-      // let a = Number(prompt("Enter first number"));
-      // let b = Number(prompt("Enter second number"));
-
-      // let sum = a + b;
-      // document.write("Sum = " + sum);
-
-      // [*MULTIPLICATION]:
-
-      // let a = Number (prompt("Enter 1st no"));
-      // let b = Number (prompt("Enter 2nd no"));
-      // let multiply = (a*b)
-      // {
-      //   document.write("Ans =" + multiply)
-      // }
-
-      // [PRINT FUNCTION]:
-
-      // function print(){
-      //   document.write("What's Up?")
-      // }
-
-      // [SWITCH]:
-      // let x = prompt ("Which fruit do you like?")
-      // switch (x) {
-      //   case "apple":
-      //     document.write("I like apples."); break;
-      //     case "mango":
-      //       document.write("I like mangoes."); break;
-      //       default:
-      //         document.write("I like all Fruits");
-      //               }
-
-      // [FOR LOOP]:
-
-      // for (var i = 100; i>0; i= i-1){
-      //   document.write(i + "<br> ");
-      // }
-
-      // [WHILE LOOP]:
-
-      // var i = 1;
-      // while (i <= 5) {
-      //   document.write(i + "<br>");
-      //   i++;
-      // }
-
-      // [DO/WHILE LOOP]:
-
-      // var i = 1;
-      // do {
-      //   document.write(i + "<br>");
-      //   i++;
-      // } while (i <= 5);
-
-      // [FUNCTION WITH RETURN]:
-
-      // function sum (a,b){
-      //   return a+b;
-      // }
-      // let s= (sum(10,20));
-      // document.write(s);
-
-      // [NESTED LOOP]:
-
-      // [Counting upto 100]:
-
-      // for (let a = 1; a<=100 ; a+=10) {
-      //   for (var b = a; b<a+10; b+=1){
-      //     document.write(b + " |  ");
-      //   }
-      //   document.write("<br>");
-      // }
-
-      // [Counting upto 10]:
-
-      // for (let a = 1; a <= 5; a += 1) {
-      //   for (let b = a; b <= a + 5; b += 1) {
-      //     document.write(b + "    |    ");
-      //   }
-      //   document.write("<br>");
-      // }
-
-      // [Example]:
-
-      // for (var a = 1; a<=5; a+=1){
-      //   for (var b = 1; b<=a; b++){
-      //     document.write(b);
-      //   }
-      //   document.write("<br>");
-      // }
-
-      // [STARS EXAMPLE]:
-
-      // for (var a = 5; a>=1; a-- ){
-      //   for (var c =5; c>=1+a; c--){
-      //   document.write("&nbsp;")
-      // }
-      //   for (var b = 1; b<=a; b++){
-      //     document.write("*"+ " ");
-      //   }
-      //   document.write("<br>");
-      // }
-
-      // for (var a = 1; a <= 5; a++) {
-      //  for(c = 1; c<=5-a; c++){
-      //    document.write("&nbsp;");
-      //    }
-
-      //   for (var b = 1; b <= a; b++) {
-      //     document.write("*" + " ");
-      //      }
-      //    document.write("<br>");
-      //     }
-
-      // [CLICKED FUNCTION]:
-
-      // function clicked(){
-      //   document.write("Hello World")
-      // } clicked();
-
-      // for ( var a=1; a<=4; a++){
-      //   for (var b=1; b<=a; b++){
-      //     document.write(`${a*b} `);
-      //   }
-      //   document.write("<br>")
-      // }
-
-      // [PRIME NO IN JS WITH NESTED LOOP]:
-
-      // let n= Number(prompt("Enter a number"));
-      // let i,j;
-      // document.write(`Prime No list upto ${n} is <br>`)
-      // for(i=2;i<=n;i++){
-      //   for(j=2;j<=i-1;j++){
-      //     if (i%j==0){
-      //       break;
-      //     }
-      //   }
-      // if(i===j){
-      //   document.write(i + "<br>")
-      // }
-      // }
-
-      // for (let i = 5; i >= 1; i--) {
-      //   for (let j = i; j >= 1; j) {
-      //     document.write(j);
-      //   }
-      //   document.write("<br>");
-      // }
-
-      // [EXAMPLE]:
-
-      // for(var a=5;a>=1;a--){
-      //       for(var b=a; b>=1; b--){
-      //             document.write(b)
-      //       }
-      //       document.write("<br>")
-      // }
-
-      // [ARRAYS]:
-
-      // [Ex#1]:
-
-      // let a = 10;
-      // let b = 20;
-      // let c = 30;
-
-      // let numbers = [10, 20, 30];
-      // document.write(a)
-
-      // [Ex#2]:
-
-      // function newline() {
-      //   document.write("<br>");
-      // }
-
-      // let fruits = ["apple", "banana", "mango", "Strawbery"];
-      // document.write(fruits[0]);
-      // newline();
-      // document.write(fruits[1]);
-      // newline();
-      // document.write(fruits[2]);
-      // newline();
-      // document.write(fruits[3])
-
-      // [Ex#3]:
-
-      // let fruits = ["apple", "banana", "mango"];
-      // fruits[0] = "orange";
-      // document.write(fruits);
-
-      // [Ex#4]:
-
-      // let fruits = ["apple", "banana", "mango"];
-      // document.write(fruits.length);
-
-      // [Ex#5]:
-
-      // for (var a = 0; a <= 3; a++) {
-      //   document.write([a], "<br>");
-      // }
-
-      // [Ex#6]:
-
-      // let nums = [10, 20, 30, 40];
-      // for (let i = 1; i < nums.length; i++) {
-      //   document.write(nums[i] , "<br>");
-      // }
-
-      // [Ex#7]:
-
-      // 1️⃣ Start par ADD karna → unshift()
-
-      // let fruits = ["apple", "banana", "mango"];
-      // fruits.unshift("orange");
-      // document.write(fruits);
-
-      // 2️⃣ Start se REMOVE karna → shift()
-
-      // let fruits = ["apple", "banana", "mango"];
-      // fruits.shift();
-      // document.write(fruits);
-
-      // [Shift() removed value bhi return karta ha]:
-
-      // let fruits = ["apple", "banana", "mango"];
-      // let removed = fruits.shift();
-      // document.write(removed);
-
-      // | Method      | Function   | Position |
-      // | ----------- | ---------- | -------- |
-      // |  Unshift()  | Add        | Start    |
-      // |  Shift()    | Remove     | Start    |
-      // |  Push()     | Add        | End      |
-      // |  Pop()      | Remove     | End      |
-
-      // 3️⃣ End par ADD karna → push()
-
-      // let fruits = ["apple", "banana", "mango"];
-      // fruits.push("orange");
-      // document.write(fruits);
-
-      // 4️⃣ End se REMOVE karna → pop()
-
-      // let fruits = ["apple", "banana", "mango"];
-      // fruits.pop();
-      // document.write(fruits);
-
-      // [Pop() removed value bhi return karta ha]:
-
-      // let fruits = ["apple", "banana", "mango"];
-      // let removed = fruits.pop();
-      // document.write(removed);
-
-      // [ARRAY METHODS]:
-
-      // [New Array()]:
-
-      // var arr= new Array([1,2,3,4);
-      // document.write(arr.indexOf(2));
-      // document.write("<br>")
-      // document.write(arr[0][3]);
-
-      // [arr.indexOf]:
-
-      // var arr = [10, 20, 30, 40];
-      // document.write(arr.indexOf(20));
-
-      // [arr.sort/ reverse]:
-
-      // var arr= [3,2,1,4]
-      // document.write(arr.sort());
-      // newline();
-      // document.write(arr.sort().reverse());
+    // [PROMPT BOX]:
+
+    // let name = prompt ("Write any thing!:");
+    // document.write(name)
+
+    // [GRADING SYSTEM IF/ELSE]:
+
+    // let marks = 40;
+    // if (marks>=90 && marks <=100) {
+    //   document.write("A+");
+    // } else if (marks>=80){
+    // document.write("B");
+    // } else if (marks>=60 && marks<=79) {
+    //   document.write("C")
+    // } else if (marks<50) {document.write("Fail")}
+
+    // [ADDITIONAL OPERATOR]:
+
+    // var a = prompt (15)
+    // var b = prompt (10)
+    // if (op == '+'){
+    //   document.write(a+b);
+    // }
+
+    // [CALCULATOR USING OPERATORS]:
+
+    // var a = Number(prompt("enter first number"));
+    // var op = prompt("Enter operator (+, -, *, /)");
+    // var b = Number(prompt("enter second number"));
+
+    // if (op === "+") {
+    //   document.write(a + b);
+    // }
+    // else if (op === "-") {
+    //   document.write(a - b);
+    // }
+    // else if (op === "*") {
+    //   document.write(a * b);
+    // }
+    // else if (op === "/") {
+    //   document.write(a / b);
+    // }
+    // else {
+    //   document.write("Invalid operator");
+    // }
+
+    // [(*FUNCTIONS WITH PARAMETER*)]:
+
+    // [*NEWLINE FUNCTION]:
+
+    // document.write("Hello");
+    // newline();
+    // document.write("World");
+    // newline();
+    // document.write("how are you");
+    // }
+
+    function newline() {
+      document.write("<br>");
+    }
+
+    // [*GREET FUNCTION]:
+
+    // function greet(Ahmed,Ali){
+    //   document.write("How are you?" + "   " + Ahmed + "   " + Ali);
+    // }
+    //   greet("Ahmed","Ali")
+
+    // [*FUNCTION GREET WITH NEWLINE]:
+
+    // function newline() {
+    //   document.write("<br>");
+    // }
+    // function greet(name1,name2){
+    //   document.write("How are you?" + "  " + name1 + "  " + name2);
+    // }
+    // greet("Ahmed","Ali");
+    // newline();
+    // newline();
+
+    // [*FUNCTION SUM WITH NEWLINE]:
+
+    // function sum(a,b){
+    //   document.write(a+b);
+    // }
+    // sum(15,20);
+    // newline();
+    // sum(10,15);
+
+    // [*SUM FUNCTION]:
+
+    // let a = Number(prompt("Enter first number"));
+    // let b = Number(prompt("Enter second number"));
+
+    // let sum = a + b;
+    // document.write("Sum = " + sum);
+
+    // [*MULTIPLICATION]:
+
+    // let a = Number (prompt("Enter 1st no"));
+    // let b = Number (prompt("Enter 2nd no"));
+    // let multiply = (a*b)
+    // {
+    //   document.write("Ans =" + multiply)
+    // }
+
+    // [PRINT FUNCTION]:
+
+    // function print(){
+    //   document.write("What's Up?")
+    // }
+
+    // [SWITCH]:
+    // let x = prompt ("Which fruit do you like?")
+    // switch (x) {
+    //   case "apple":
+    //     document.write("I like apples."); break;
+    //     case "mango":
+    //       document.write("I like mangoes."); break;
+    //       default:
+    //         document.write("I like all Fruits");
+    //               }
+
+    // [FOR LOOP]:
+
+    // for (var i = 100; i>0; i= i-1){
+    //   document.write(i + "<br> ");
+    // }
+
+    // [WHILE LOOP]:
+
+    // var i = 1;
+    // while (i <= 5) {
+    //   document.write(i + "<br>");
+    //   i++;
+    // }
+
+    // [DO/WHILE LOOP]:
+
+    // var i = 1;
+    // do {
+    //   document.write(i + "<br>");
+    //   i++;
+    // } while (i <= 5);
+
+    // [FUNCTION WITH RETURN]:
+
+    // function sum (a,b){
+    //   return a+b;
+    // }
+    // let s= (sum(10,20));
+    // document.write(s);
+
+    // [NESTED LOOP]:
+
+    // [Counting upto 100]:
+
+    // for (let a = 1; a<=100 ; a+=10) {
+    //   for (var b = a; b<a+10; b+=1){
+    //     document.write(b + " |  ");
+    //   }
+    //   document.write("<br>");
+    // }
+
+    // [Counting upto 10]:
+
+    // for (let a = 1; a <= 5; a += 1) {
+    //   for (let b = a; b <= a + 5; b += 1) {
+    //     document.write(b + "    |    ");
+    //   }
+    //   document.write("<br>");
+    // }
+
+    // [Example]:
+
+    // for (var a = 1; a<=5; a+=1){
+    //   for (var b = 1; b<=a; b++){
+    //     document.write(b);
+    //   }
+    //   document.write("<br>");
+    // }
+
+    // [STARS EXAMPLE]:
+
+    // for (var a = 5; a>=1; a-- ){
+    //   for (var c =5; c>=1+a; c--){
+    //   document.write("&nbsp;")
+    // }
+    //   for (var b = 1; b<=a; b++){
+    //     document.write("*"+ " ");
+    //   }
+    //   document.write("<br>");
+    // }
+
+    // for (var a = 1; a <= 5; a++) {
+    //  for(c = 1; c<=5-a; c++){
+    //    document.write("&nbsp;");
+    //    }
+
+    //   for (var b = 1; b <= a; b++) {
+    //     document.write("*" + " ");
+    //      }
+    //    document.write("<br>");
+    //     }
+
+    // [CLICKED FUNCTION]:
+
+    // function clicked(){
+    //   document.write("Hello World")
+    // } clicked();
+
+    // for ( var a=1; a<=4; a++){
+    //   for (var b=1; b<=a; b++){
+    //     document.write(`${a*b} `);
+    //   }
+    //   document.write("<br>")
+    // }
+
+    // [PRIME NO IN JS WITH NESTED LOOP]:
+
+    // let n= Number(prompt("Enter a number"));
+    // let i,j;
+    // document.write(`Prime No list upto ${n} is <br>`)
+    // for(i=2;i<=n;i++){
+    //   for(j=2;j<=i-1;j++){
+    //     if (i%j==0){
+    //       break;
+    //     }
+    //   }
+    // if(i===j){
+    //   document.write(i + "<br>")
+    // }
+    // }
+
+    // for (let i = 5; i >= 1; i--) {
+    //   for (let j = i; j >= 1; j) {
+    //     document.write(j);
+    //   }
+    //   document.write("<br>");
+    // }
+
+    // [EXAMPLE]:
+
+    // for(var a=5;a>=1;a--){
+    //       for(var b=a; b>=1; b--){
+    //             document.write(b)
+    //       }
+    //       document.write("<br>")
+    // }
+
+    // [ARRAYS]:
+
+    // [Ex#1]:
+
+    // let a = 10;
+    // let b = 20;
+    // let c = 30;
+
+    // let numbers = [10, 20, 30];
+    // document.write(a)
+
+    // [Ex#2]:
+
+    // function newline() {
+    //   document.write("<br>");
+    // }
+
+    // let fruits = ["apple", "banana", "mango", "Strawbery"];
+    // document.write(fruits[0]);
+    // newline();
+    // document.write(fruits[1]);
+    // newline();
+    // document.write(fruits[2]);
+    // newline();
+    // document.write(fruits[3])
+
+    // [Ex#3]:
+
+    // let fruits = ["apple", "banana", "mango"];
+    // fruits[0] = "orange";
+    // document.write(fruits);
+
+    // [Ex#4]:
+
+    // let fruits = ["apple", "banana", "mango"];
+    // document.write(fruits.length);
+
+    // [Ex#5]:
+
+    // for (var a = 0; a <= 3; a++) {
+    //   document.write([a], "<br>");
+    // }
+
+    // [Ex#6]:
+
+    // let nums = [10, 20, 30, 40];
+    // for (let i = 1; i < nums.length; i++) {
+    //   document.write(nums[i] , "<br>");
+    // }
+
+    // [Ex#7]:
+
+    // 1️⃣ Start par ADD karna → unshift()
+
+    // let fruits = ["apple", "banana", "mango"];
+    // fruits.unshift("orange");
+    // document.write(fruits);
+
+    // 2️⃣ Start se REMOVE karna → shift()
+
+    // let fruits = ["apple", "banana", "mango"];
+    // fruits.shift();
+    // document.write(fruits);
+
+    // [Shift() removed value bhi return karta ha]:
+
+    // let fruits = ["apple", "banana", "mango"];
+    // let removed = fruits.shift();
+    // document.write(removed);
+
+    // | Method      | Function   | Position |
+    // | ----------- | ---------- | -------- |
+    // |  Unshift()  | Add        | Start    |
+    // |  Shift()    | Remove     | Start    |
+    // |  Push()     | Add        | End      |
+    // |  Pop()      | Remove     | End      |
+
+    // 3️⃣ End par ADD karna → push()
+
+    // let fruits = ["apple", "banana", "mango"];
+    // fruits.push("orange");
+    // document.write(fruits);
+
+    // 4️⃣ End se REMOVE karna → pop()
+
+    // let fruits = ["apple", "banana", "mango"];
+    // fruits.pop();
+    // document.write(fruits);
+
+    // [Pop() removed value bhi return karta ha]:
+
+    // let fruits = ["apple", "banana", "mango"];
+    // let removed = fruits.pop();
+    // document.write(removed);
+
+    // [ARRAY METHODS]:
+
+    // [New Array()]:
+
+    // var arr= new Array([1,2,3,4);
+    // document.write(arr.indexOf(2));
+    // document.write("<br>")
+    // document.write(arr[0][3]);
+
+    // [arr.indexOf]:
+
+    // var arr = [10, 20, 30, 40];
+    // document.write(arr.indexOf(20));
+
+    // [arr.sort/ reverse]:
+
+    // var arr= [3,2,1,4]
+    // document.write(arr.sort());
+    // newline();
+    // document.write(arr.sort().reverse());
+
+    // var arr = [5, 2, 9, 1, 7];
+    // arr.sort(function (a, b) {
+    //   return a-b;
+    // });
+    // document.write(arr);
 
-      // var arr = [5, 2, 9, 1, 7];
-      // arr.sort(function (a, b) {
-      //   return a-b;
-      // });
-      // document.write(arr);
+    //  var arr = [5,4,8,1]
+    //  arr.sort(function(a,b){
+    //   return b-a;
+    //  });
+    //  document.write(arr[0])
+
+    // [arr.pop/push]:
 
-      //  var arr = [5,4,8,1]
-      //  arr.sort(function(a,b){
-      //   return b-a;
-      //  });
-      //  document.write(arr[0])
+    // var arr = [10, 20, 30, 40];
+    // arr.pop();
+    // document.write(arr);
 
-      // [arr.pop/push]:
+    // var arr= [5,6,7]
+    // arr.push(8);
+    // document.write(arr)
 
-      // var arr = [10, 20, 30, 40];
-      // arr.pop();
-      // document.write(arr);
+    // [MULTI DIMENSIONAL ARRAY]:
 
-      // var arr= [5,6,7]
-      // arr.push(8);
-      // document.write(arr)
+    // var ary = [
+    //   ["Amir", "Male", 21, "BSCS"],
+    //   ["Asim", "Male", 21, "BSSE"],
+    //   ["Ahmed", "Male", 21, "BSCS"],
+    //   ["Bilal", "Male", 21, "BSSE"],
+    // ];
+    // document.write(ary[0][0]);
 
-      // [MULTI DIMENSIONAL ARRAY]:
+    // for (var a = 0; a < ary.length; a++) {
+    //   for (b = 0; b < ary[a].length; b++) {
+    //     document.write(ary[a][b] + " | ");
+    //   }
+    //   document.write("<br>");
 
-      // var ary = [
-      //   ["Amir", "Male", 21, "BSCS"],
-      //   ["Asim", "Male", 21, "BSSE"],
-      //   ["Ahmed", "Male", 21, "BSCS"],
-      //   ["Bilal", "Male", 21, "BSSE"],
-      // ];
-      // document.write(ary[0][0]);
+    // var ary = [
+    //   ["Amir", "Male", 21, "BSCS"],
+    //   ["Asim", "Male", 21, "BSSE"],
+    //   ["Ahmed", "Male", 21, "BSCS"],
+    //   ["Bilal", "Male", 21, "BSSE"],
+    // ];
 
-      // for (var a = 0; a < ary.length; a++) {
-      //   for (b = 0; b < ary[a].length; b++) {
-      //     document.write(ary[a][b] + " | ");
-      //   }
-      //   document.write("<br>");
+    // for (var a = 0; a < ary.length; a++) {
+    //   for (var b = 0; b < ary[a].length; b++) {
+    //     document.write(ary[a][b] + " | ");
+    //   }
+    //   document.write("<br>");
+    // newline();
+    // }
 
-      // var ary = [
-      //   ["Amir", "Male", 21, "BSCS"],
-      //   ["Asim", "Male", 21, "BSSE"],
-      //   ["Ahmed", "Male", 21, "BSCS"],
-      //   ["Bilal", "Male", 21, "BSSE"],
-      // ];
+    //  [OBJECTS]:
 
-      // for (var a = 0; a < ary.length; a++) {
-      //   for (var b = 0; b < ary[a].length; b++) {
-      //     document.write(ary[a][b] + " | ");
-      //   }
-      //   document.write("<br>");
-      // newline();
-      // }
+    //     var obj = {
+    //   name: "Amir",
+    //   age: 21,
+    //   gender: "Male"
+    // };
 
-      //  [OBJECTS]:
+    // document.write(obj.name);
 
-      //     var obj = {
-      //   name: "Amir",
-      //   age: 21,
-      //   gender: "Male"
-      // };
+    // var obj = {name:"Amir",age:21,gender:"Male"}
+    // document.write(obj.name);
 
-      // document.write(obj.name);
+    //  var obj2 = new Object();
+    //  obj2.name = "Asim"
+    //  document.write(obj2.name);
 
-      // var obj = {name:"Amir",age:21,gender:"Male"}
-      // document.write(obj.name);
+    //  var currentDate = new Date;
+    //   document.write(currentDate);
 
-      //  var obj2 = new Object();
-      //  obj2.name = "Asim"
-      //  document.write(obj2.name);
-    
-      //  var currentDate = new Date;
-      //   document.write(currentDate);
+    // var ary = new Object();
+    // ary.name = "amir";
+    // document.write(ary.name);
 
-        // var ary = new Object();
-        // ary.name = "amir";
-        // document.write(ary.name);
- 
 
-      // var obj = {
-      //   name: "Amir",
-      //   age: 21,
-      //   gender: "Male",
-      // };
+    // var obj = {
+    //   name: "Amir",
+    //   age: 21,
+    //   gender: "Male",
+    // };
 
-      // for (let key in obj) {
-      //   document.write(obj[key] + "<br>");
-      // }
+    // for (let key in obj) {
+    //   document.write(obj[key] + "<br>");
+    // }
 
+    // [DOM (Document object module)]:
 
-    
+    // console.log(document.body)
+    // console.log(document.head)
 
+    // [document.getElementById]:
 
+    // // console.log(document.getElementById("h1"));
 
+    // [getElementsByClassName]:
 
+    // console.log(document.getElementsByClassName("text"));
 
+    // for (let i = 0; i < text.length; i++) {
+    //   console.log(text[i]);
+    // }
 
+    // [document.getElementsByTagName]:
 
+    // let divs = document.getElementsByTagName("div");
+    // console.log(divs);
+    // for (let i = 0; i < divs.length; i++) {
+    //   divs[i].style.color = "red";
+    // }
 
+    // [JSON File]:
 
+    let jsonData = `{
+  "name": "Ali",
+  "age": 20
+}`;
 
+    let obj = JSON.parse(jsonData);
+    console.log(obj.age);
 
-    </script>
-  </body>
+
+
+
+  </script>
+</body>
+
 </html>
