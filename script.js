@@ -34,6 +34,47 @@
 // }
 // document.write(student["age"]);
 
+//[TEMPLATE LITERALES IN JS ``(a way to have embed expression ins tring)]:
+
+// let specialStrring = `This is template literal in js`;
+// console.log(specialStrring);
+
+// let obj = {
+//   item: "pen",
+//   price: 20,
+// };
+// let output = `The cost of ${obj.item} is ${obj.price}`;
+// console.log(output);
+
+//[ESCAPE CHARACTER (break line)]:
+
+// console.log("Hello\nWorld");
+// console.log("Hello\tWorld");
+// let st = "Hello\nWorld";
+// console.log(st.length); // 11 not 12 because two escape chrcs counts only one
+
+//[STRING METHODS IN JS]:
+
+// let str = "hellololo";
+// // console.log(str.replaceAll("lo", "p"));
+// console.log(str.charAt(0));
+// let strr1 = "abcdefgh";
+// // console.log(strr1.toUpperCase());
+// console.log(strr1.replace("h", "y"));
+
+// let strr2 = "ABCDEF";
+// console.log(strr2.toLowerCase());
+// console.log(strr2.slice(0, 3));
+// console.log(strr1.concat(strr2));
+// console.log(strr1 + strr2);
+
+// let strr3 = "   Ahmed, How are you?    "; //removes space
+// console.log(strr3.trim());
+
+// let fullname = prompt("Enter your name without spaces");
+// let username = "@" + fullname + fullname.length;
+// console.log(username);
+
 // [VOTING CHECK FUNCTION WITH IF/ELSE]:
 
 // let Age = 16
@@ -95,16 +136,6 @@
 // }
 // }
 
-//[GAME QUESTION PRACTICE]:
-
-let gameNum = 25
-let userNum = prompt("Guess the Game Number!");
-
-while(userNum!=gameNum){
-  userNum = prompt("You entered wrong number😑. Guess again!")
-};
-document.write("Congratulations you entered the correct number.");
-
 // [TERNARY OPERATOR (A ? B : C)]:
 
 // let age = 17;
@@ -137,7 +168,6 @@ document.write("Congratulations you entered the correct number.");
 // } else {
 // document.write("Fail");
 // }
-
 
 // [ADDITIONAL OPERATOR]:
 
@@ -312,7 +342,7 @@ function newline() {
 
 // let sum = 0;
 // for (i=1;i<=5;i++){
-//   sum = sum + i 
+//   sum = sum + i
 // }
 // document.write(sum)
 
@@ -323,6 +353,16 @@ function newline() {
 //   document.write(i + "<br>");
 //   i++;
 // }
+
+//[GAME QUESTION PRACTICE]:
+
+// let gameNum = 25;
+// let userNum = prompt("Guess the Game Number!");
+
+// while (userNum != gameNum) {
+//   userNum = prompt("You entered wrong number😑. Guess again!");
+// }
+// document.write("Congratulations you entered the correct number.");
 
 // [DO/WHILE LOOP]:
 
@@ -651,7 +691,6 @@ function newline() {
 // ary.name = "amir";
 // document.write(ary.name);
 
-
 // var obj = {
 //   name: "Amir",
 //   age: 21,
@@ -696,6 +735,3 @@ function newline() {
 
 //     let obj = JSON.parse(jsonData)
 //     console.log(obj.age)
-
-
-
