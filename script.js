@@ -281,13 +281,10 @@ function newline() {
 
 // [*FUNCTION GREET WITH NEWLINE]:
 
-// function newline() {
-//   document.write("<br>");
-// }
-// function greet(name1,name2){
+// function greet(name1, name2) {
 //   document.write("How are you?" + "  " + name1 + "  " + name2);
 // }
-// greet("Ahmed","Ali");
+// greet("Ahmed", "Ali");
 // newline();
 // newline();
 
@@ -319,8 +316,8 @@ function newline() {
 
 // [PRINT FUNCTION]:
 
-// function print(){
-//   document.write("What's Up?")
+// function print() {
+//   document.write("What's Up?");
 // }
 
 // [SWITCH]:
@@ -374,11 +371,11 @@ function newline() {
 
 //[FOR/OF LOOP(used for strings)]:
 
-// let str = "javascript"
-// let size = 0
-// for (let val of str){
+// let str = "javascript";
+// let size = 0;
+// for (let val of str) {
 //   console.log(val);
-//   size++
+//   //   size++
 // }
 // console.log(size)
 
@@ -395,11 +392,57 @@ function newline() {
 
 // [FUNCTION WITH RETURN]:
 
-// function sum (a,b){
-//   return a+b;
+// function sum(a, b) {
+//   return a + b;
 // }
-// let s= (sum(10,20));
+// let s = sum(10, 20);
 // document.write(s);
+
+//[ARROWS FUNCTIONS(compact way to write a function)]://MODERN JS
+
+// const arrowSum = (a, b) => {
+//   console.log(a + b);
+// };
+// arrowSum(4, 5);
+
+// const mul = (a, b) => {
+//   console.log(a * b);
+// };
+// mul(9, 8);
+
+// function countVowels(str) {
+//   let count = 0;
+//   for (let char of str) {
+//     if (
+//       char === "a" ||
+//       char === "e" ||
+//       char === "i" ||
+//       char === "o" ||
+//       char === "u"
+//     ) {
+//       count++;
+//     }
+//   }
+//   console.log(count);
+// }
+// console.log(countVowels("bilal"));
+
+// const countVowels = (str) => {
+//   let count = 0;
+//   for (let char of str) {
+//     if (
+//       char === "a" ||
+//       char === "e" ||
+//       char === "i" ||
+//       char === "o" ||
+//       char === "u"
+//     ) {
+//       count++;
+//     }
+//   }
+//   console.log(count);
+// };
+// console.log(countVowels("bilal"));
 
 // [NESTED LOOP]:
 
@@ -589,13 +632,97 @@ function newline() {
 
 // [Pop() removed value bhi return karta ha]:
 
-// let fruits = ["apple", "banana", "mango"];
+// let fruits = ["apple", "banana", "mango", "cheery", "grapes"];
 // let removed = fruits.pop();
 // document.write(removed);
+// console.log(fruits);
+// console.log(fruits.toString());
+// let ar = [1, 2, 3, 4, 5, 6];
+// fruits.splice(1, 2, "guava");
 
 // [ARRAY METHODS]:
 
-// [New Array()]:
+//[FOR/EACH LOOP]:// Higher order function/method --> Which takes another function in its parameter
+
+// let arr = [1, 2, 3, 4, 5];
+
+// arr.forEach(function print(a) {
+//   console.log(a);
+// });
+
+// arr.forEach((a, idx, arr) => {
+//   console.log(a, idx, arr);
+// });
+
+// let arr = [2, 3, 4, 5, 6];
+// let calcsq = (num) => {
+//   console.log(num * num);
+// };
+// arr.forEach(calcsq);
+
+//[arr.MAP]:
+
+// let arr = [67, 54, 87];
+// let newArray = arr.map((val) => {
+//   return val;
+// });
+// console.log(newArray);
+
+//[arr.FILTER]:
+
+// let arr = [1, 2, 3, 4, 5, 6, 7, 8];
+// let evenArray = arr.filter((val) => {
+//   return val % 2 === 0;
+// });
+// console.log(evenArray);
+
+//[arr.REDUCE]:
+
+// let arr = [1, 2, 3, 4];
+// let output = arr.reduce((pre, curr) => {
+//   return pre * curr;
+// });
+// let output = arr.reduce((pre, curr) => {
+//   return pre > curr ? pre : curr;
+// });
+// console.log(output);
+
+// let marks = [97, 87, 65, 43, 90, 93];
+// let toppers = marks.filter((val) => {
+//   return val >= 90;
+// });
+// console.log(toppers);
+
+// let n = prompt("Enter a number:");
+// let arr = [];
+
+// for (let i = 1; i <= n; i++) {
+//   arr[i - 1] = i;
+// }
+// console.log(arr);
+
+// let sum = arr.reduce((prev, curr) => {
+//   return prev + curr;
+// });
+// console.log(sum);
+// let product = arr.reduce((prev, curr) => {
+//   return prev * curr;
+// });
+// console.log(product);
+
+// let n = Number(prompt("Enter a number:"));
+// let arr = [];
+
+// for (let i = 1; i <= n; i++) {
+//   arr.push(i);
+// }
+
+// // let sum = arr.reduce((p, c) => p + c, 0);
+// // let product = arr.reduce((p, c) => p * c, 1);
+
+// console.log(arr, sum, product);
+
+// [NEW ARRAY()]:
 
 // var arr= new Array([1,2,3,4);
 // document.write(arr.indexOf(2));
@@ -667,6 +794,39 @@ function newline() {
 // newline();
 // }
 
+// let heroes = ["spiderman", "ironman", "hulk", "thor"];
+// // for (let el of heroes) {
+// //   console.log(el);
+// // }
+// for (i = 0; i < heroes.length; i++) {
+//   console.log(heroes[i]);
+// }
+
+// let marks = [85, 97, 44, 37, 76, 60];
+// let sum = 0;
+// for (let val of marks) {
+//   sum += val;
+// }
+// let avg = sum / marks.length;
+// console.log(sum);
+// console.log(`Avg marks of class is ${avg}`);
+
+// let item = [500, 600, 700, 800];
+
+// let i = 0;
+// for (let val of item) {
+//   let offer = val / 10;
+//   item[i] = item[i] - offer;
+//   console.log(item[i]);
+//   i++;
+// }
+
+// for (i = 0; i < item.length; i++) {
+//   let offer = item[i] / 10;
+//   item[i] -= offer;
+// }
+// console.log(item);
+
 //  [OBJECTS]:
 
 //     var obj = {
@@ -701,18 +861,22 @@ function newline() {
 //   document.write(obj[key] + "<br>");
 // }
 
-// [DOM (Document object module)]:
+// [DOM (DOCUMENT OBJECT MODEL)]:
 
-// console.log(document.body)
+// console.dir(window);
+// console.dir(document);
+// console.log(document.body);
 // console.log(document.head)
 
 // [document.getElementById]:
 
-// // console.log(document.getElementById("h1"));
+// console.log(document.getElementById("h1"));
+// console.dir(document.getElementById("h1"));
 
 // [getElementsByClassName]:
 
 // console.log(document.getElementsByClassName("text"));
+// console.dir(document.getElementsByClassName("text"));
 
 // for (let i = 0; i < text.length; i++) {
 //   console.log(text[i]);
@@ -720,11 +884,27 @@ function newline() {
 
 // [document.getElementsByTagName]:
 
-// let divs = document.getElementsByTagName("div");
+// let divs = document.getElementsByTagName("text");
 // console.log(divs);
 // for (let i = 0; i < divs.length; i++) {
 //   divs[i].style.color = "red";
 // }
+
+// console.log(document.getElementsByTagName("p"));
+
+//[QUERY SELECTOR]:
+
+let elmt = document.querySelector("#h1");
+// console.log(elmt);
+console.log(elmt.tagName);
+
+// let element = document.querySelector(".text");
+// console.log(element);
+
+// let element1 = document.querySelector("p");
+// console.log(element1);
+// let elements = document.querySelectorAll("p");
+// console.log(elements);
 
 // // [JSON File]:
 
