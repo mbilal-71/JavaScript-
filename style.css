@@ -1,0 +1,31 @@
+body{
+    background-color: rgb(28, 28, 28);
+    color: white;
+}
+/* h1{
+    visibility: hidden;
+} */
+.box{
+    height: 100px;
+    width: 100px;
+    border: 1px solid; color: #ffffff;
+    margin: 5px;
+    padding: 5px;
+    text-align: center;
+    background-color: rgb(23, 14, 15);
+}
+#box{
+    height: 200px;
+    background-color: #d184c6;
+width: 100px;
+border-radius: 1px solid black;
+color: rgb(9, 9, 9);
+}
+.content{
+    color: #d184c6;
+    background: rgb(27, 30, 27);
+}
+.newClass{
+   background: #9d1111;
+   color: yellow;
+}

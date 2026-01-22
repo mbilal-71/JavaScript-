@@ -861,7 +861,7 @@ function newline() {
 //   document.write(obj[key] + "<br>");
 // }
 
-// [DOM (DOCUMENT OBJECT MODEL)]:
+// [DOM (DOCUMENT OBJECT MODEL) Dom tree includes--> Tree nodes, Comments,Elements(these'r Majors)]:
 
 // console.dir(window);
 // console.dir(document);
@@ -878,33 +878,118 @@ function newline() {
 // console.log(document.getElementsByClassName("text"));
 // console.dir(document.getElementsByClassName("text"));
 
-// for (let i = 0; i < text.length; i++) {
-//   console.log(text[i]);
-// }
-
 // [document.getElementsByTagName]:
 
-// let divs = document.getElementsByTagName("text");
-// console.log(divs);
-// for (let i = 0; i < divs.length; i++) {
-//   divs[i].style.color = "red";
-// }
-
+// console.log(document.getElementsByTagName("text"));
 // console.log(document.getElementsByTagName("p"));
 
 //[QUERY SELECTOR]:
 
-let elmt = document.querySelector("#h1");
+// let elmt = document.querySelector("#h1");
 // console.log(elmt);
-console.log(elmt.tagName);
-
+// console.log(elmt.tagName);
+// console.log(document.body.firstChild);
 // let element = document.querySelector(".text");
 // console.log(element);
-
+// console.log(document.querySelector("div").children);
 // let element1 = document.querySelector("p");
 // console.log(element1);
 // let elements = document.querySelectorAll("p");
 // console.log(elements);
+// let div = document.querySelector("div");
+// console.log(div);
+// console.dir(div);
+// console.log(div.innerText);
+// console.log(div.innerHTML);
+// console.log(div.textContent);
+// let heading = document.querySelector("h1");
+// console.log(heading);
+// console.log((heading.innerText = "New Heading"));
+// console.log((heading.innerHTML = "<i>New Heading</i>"));
+// console.log(heading.textContent);
+
+// let h2 = document.querySelector("h2");
+// console.dir(h2.innerText);
+// h2.innerText = h2.innerText + "How are you World?";
+
+// let divs = document.querySelectorAll(".box");
+// let i = 1;
+// for (div of divs) {
+//   div.innerText = `New unique value ${i}`;
+//   i++;
+// }
+
+//[ATTRIBUTES]:
+
+// let div = document.querySelector("div");
+// console.log(div);
+// let id = div.getAttribute("id");
+// console.log(id);
+// let name = div.getAttribute("name");
+// console.log(name);
+
+// let para = document.querySelector("p");
+// console.log(para.getAttribute("class"));
+
+// let para = document.querySelector("p");
+// console.log(para.setAttribute("class", "New Class"));
+
+//[STYLE]:
+
+// let div = document.querySelector("div");
+// div.style.borderRadius = "10px";
+// console.log(div.style);
+// div.style.backgroundColor = "red";
+// div.style.fontSize = "20px";
+// div.innerText = "Hello";
+// div.innerHTML = "How are you?";
+// let span = document.querySelector("span");
+// span.style.display = "block";
+// span.style.textAlign = "center";
+// span.style.padding = "5px";
+
+//[INSERT ELEMENTS]:
+
+// let newbtn = document.createElement("button");
+// newbtn.innerText = "click me!";
+// console.log();
+// let div = document.querySelector("div");
+// newbtn.style.margin = "7px";
+// div.prepend(newbtn);// prepends adds at the start of node (inside)
+// div.append(newbtn); // append adds at the end of node (inside)
+// div.before(newbtn); // adds at the start of node (outside)
+// div.after(newbtn); //  adds at the end of node (outside)
+// const paragraph = document.body.appendChild(document.createElement("p"));
+
+// let newHeading = document.createElement("h1");
+// newHeading.innerHTML = "<i>Hi,Iam new!</>";
+// document.querySelector("body").prepend(newHeading);
+// newHeading.style.color = "white";
+
+//[DELETE ELEMENT]:
+
+// let para = document.querySelector("p");
+// para.remove();
+// newHeading.remove();
+
+//[PRACTICE QUESTIONS]:
+// #1
+// let newbtn = document.createElement("button");
+// newbtn.innerText = "click me!";
+// newbtn.style.color = "white";
+// newbtn.style.backgroundColor = "red";
+// document.querySelector("body").prepend(newbtn);
+
+//#2
+
+// let para = document.querySelector("p");
+// console.log(para.getAttribute("class"));
+// console.log(para.setAttribute("class", "newClass"));
+// console.log(para.classList.add("newClass"));
+// console.log(para.classList.remove("newClass"));
+// console.log(para.classList);
+
+//[EVENTS IN BROWSER]:
 
 // // [JSON File]:
 
