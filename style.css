@@ -1,7 +1,7 @@
-body{
+/* body{
     background-color: rgb(28, 28, 28);
     color: white;
-}
+} */
 /* h1{
     visibility: hidden;
 } */
@@ -28,4 +28,13 @@ color: rgb(9, 9, 9);
 .newClass{
    background: #9d1111;
    color: yellow;
+}
+
+.dark{
+    background-color: #1b1b1b;
+    color: #ffffff;
+}
+.light{
+    background-color: white;
+    color: black;
 }

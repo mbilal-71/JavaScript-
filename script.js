@@ -34,7 +34,7 @@
 // }
 // document.write(student["age"]);
 
-//[TEMPLATE LITERALES IN JS ``(a way to have embed expression ins tring)]:
+//[TEMPLATE LITERALES IN JS ``(a way to have embed expression in string)]:
 
 // let specialStrring = `This is template literal in js`;
 // console.log(specialStrring);
@@ -177,7 +177,7 @@
 //   document.write(a+b);
 // }
 
-//[UNIARY OPERATOR]:
+//[UNARY OPERATOR]:
 
 // let i = 5
 
@@ -500,7 +500,7 @@ function newline() {
 
 // function clicked(){
 //   document.write("Hello World")
-// } clicked();
+// }
 
 // for ( var a=1; a<=4; a++){
 //   for (var b=1; b<=a; b++){
@@ -861,12 +861,12 @@ function newline() {
 //   document.write(obj[key] + "<br>");
 // }
 
-// [DOM (DOCUMENT OBJECT MODEL) Dom tree includes--> Tree nodes, Comments,Elements(these'r Majors)]:
+// [DOM (DOCUMENT OBJECT MODEL) Dom tree includes--> Tree nodes, Comments, Elements(these'r Majors)]:
 
 // console.dir(window);
 // console.dir(document);
 // console.log(document.body);
-// console.log(document.head)
+// console.log(document.head);
 
 // [document.getElementById]:
 
@@ -880,7 +880,7 @@ function newline() {
 
 // [document.getElementsByTagName]:
 
-// console.log(document.getElementsByTagName("text"));
+// console.log(document.getElementsByTagName("h1"));
 // console.log(document.getElementsByTagName("p"));
 
 //[QUERY SELECTOR]:
@@ -888,7 +888,9 @@ function newline() {
 // let elmt = document.querySelector("#h1");
 // console.log(elmt);
 // console.log(elmt.tagName);
+// console.log(document.body.firstElementChild);
 // console.log(document.body.firstChild);
+// console.log(document.body.firstChild.nodeType);
 // let element = document.querySelector(".text");
 // console.log(element);
 // console.log(document.querySelector("div").children);
@@ -901,7 +903,7 @@ function newline() {
 // console.dir(div);
 // console.log(div.innerText);
 // console.log(div.innerHTML);
-// console.log(div.textContent);
+// console.log(div.textContent); //<h1> shows hidden visibility also (style.css)
 // let heading = document.querySelector("h1");
 // console.log(heading);
 // console.log((heading.innerText = "New Heading"));
@@ -909,7 +911,8 @@ function newline() {
 // console.log(heading.textContent);
 
 // let h2 = document.querySelector("h2");
-// console.dir(h2.innerText);
+// console.log(h2);
+// console.log(h2.innerText);
 // h2.innerText = h2.innerText + "How are you World?";
 
 // let divs = document.querySelectorAll(".box");
@@ -932,7 +935,7 @@ function newline() {
 // console.log(para.getAttribute("class"));
 
 // let para = document.querySelector("p");
-// console.log(para.setAttribute("class", "New Class"));
+// console.log(para.setAttribute("class", "New Class")); //shows in elements section
 
 //[STYLE]:
 
@@ -943,6 +946,7 @@ function newline() {
 // div.style.fontSize = "20px";
 // div.innerText = "Hello";
 // div.innerHTML = "How are you?";
+// div.style.padding = "10px";
 // let span = document.querySelector("span");
 // span.style.display = "block";
 // span.style.textAlign = "center";
@@ -950,12 +954,14 @@ function newline() {
 
 //[INSERT ELEMENTS]:
 
-// let newbtn = document.createElement("button");
-// newbtn.innerText = "click me!";
-// console.log();
-// let div = document.querySelector("div");
-// newbtn.style.margin = "7px";
-// div.prepend(newbtn);// prepends adds at the start of node (inside)
+let newbtn = document.createElement("button");
+newbtn.innerText = "click me!";
+newbtn.onclick = function () {
+  console.log("Button was clicked");
+};
+let div = document.querySelector("div");
+newbtn.style.margin = "7px";
+// div.prepend(newbtn); // prepends adds at the start of node (inside)
 // div.append(newbtn); // append adds at the end of node (inside)
 // div.before(newbtn); // adds at the start of node (outside)
 // div.after(newbtn); //  adds at the end of node (outside)
@@ -989,9 +995,82 @@ function newline() {
 // console.log(para.classList.remove("newClass"));
 // console.log(para.classList);
 
-//[EVENTS IN BROWSER]:
+//[EVENTS IN BROWSER]: //change in state of an object
 
-// // [JSON File]:
+// let btn = document.querySelector("#btn");
+// btn.onclick = () => {
+//   console.log("Hello World!");
+// };
+
+// let div = document.querySelector("div");
+// div.onmouseover = () => {
+//   console.log("You just hover the box");
+// };
+
+//[EVENT OBJECT]:
+
+// div.onclick = (evt) => {
+//   console.log(evt);
+//   console.log(evt.type);
+//   console.log(evt.target);
+//   console.log(evt.clientX, evt.clientY);
+// };
+
+//[EVENT LISTNER]:
+
+// let btn = document.querySelector("#btn");
+// btn.addEventListener("click", () => {
+//   console.log("You just clicked the button-handler 1");
+// });
+// btn.addEventListener("click", () => {
+//   console.log("You just clicked the button-handler 2");
+// });
+// const handler3 = () => {
+//   console.log("You just clicked the button-handler 3");
+// };
+// btn.addEventListener("click", () => {
+//   console.log("You just clicked the button-handler 4");
+// });
+
+//[REMOVE EVENT]:
+
+// btn.removeEventListener("click", handler3);
+
+//[LIGHT AND DARK MODE BUTTON]:
+
+// let modebtn = document.querySelector("#Mode");
+// let body = document.querySelector("body");
+// let currMode = "Light";
+// modebtn.addEventListener("click", () => {
+//   if (currMode === "Light") {
+//     currMode = "dark";
+//     body.classList.add("dark");
+//     body.classList.remove("light");
+//   } else {
+//     currMode = "Light";
+//     body.classList.add("light");
+//     body.classList.remove("dark");
+//   }
+//   console.log(currMode);
+// });
+
+// let modebtn = document.querySelector("#Mode");
+// let body = document.querySelector("body");
+// let currmode = "dark";
+
+// modebtn.addEventListener("click", () => {
+//   if (currmode === "dark") {
+//     currmode = "light";
+//     body.classList.add("light");
+//     body.classList.remove("dark");
+//   } else {
+//     currmode = "dark";
+//     body.classList.add("dark");
+//     body.classList.remove("light");
+//   }
+// });
+
+// [JSON File]:
 
 //     let jsonData = `{
 //   "name": "Ali",
