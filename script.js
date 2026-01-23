@@ -954,19 +954,19 @@ function newline() {
 
 //[INSERT ELEMENTS]:
 
-let newbtn = document.createElement("button");
-newbtn.innerText = "click me!";
-newbtn.onclick = function () {
-  console.log("Button was clicked");
-};
-let div = document.querySelector("div");
-newbtn.style.margin = "7px";
+// let newbtn = document.createElement("button");
+// newbtn.innerText = "click me!";
+// newbtn.onclick = function () {
+//   console.log("Button was clicked");
+// };
+// let div = document.querySelector("div");
+// newbtn.style.margin = "7px";
 // div.prepend(newbtn); // prepends adds at the start of node (inside)
 // div.append(newbtn); // append adds at the end of node (inside)
 // div.before(newbtn); // adds at the start of node (outside)
 // div.after(newbtn); //  adds at the end of node (outside)
 // const paragraph = document.body.appendChild(document.createElement("p"));
-
+// paragraph.innerText = "Hello world";
 // let newHeading = document.createElement("h1");
 // newHeading.innerHTML = "<i>Hi,Iam new!</>";
 // document.querySelector("body").prepend(newHeading);
@@ -976,12 +976,16 @@ newbtn.style.margin = "7px";
 
 // let para = document.querySelector("p");
 // para.remove();
-// newHeading.remove();
+// // newHeading.remove();
 
 //[PRACTICE QUESTIONS]:
+
 // #1
 // let newbtn = document.createElement("button");
 // newbtn.innerText = "click me!";
+// newbtn.onclick = function () {
+//   console.log("You just clicked a button");
+// };
 // newbtn.style.color = "white";
 // newbtn.style.backgroundColor = "red";
 // document.querySelector("body").prepend(newbtn);
@@ -1013,7 +1017,7 @@ newbtn.style.margin = "7px";
 //   console.log(evt);
 //   console.log(evt.type);
 //   console.log(evt.target);
-//   console.log(evt.clientX, evt.clientY);
+//   //   console.log(evt.clientX, evt.clientY);
 // };
 
 //[EVENT LISTNER]:
@@ -1028,6 +1032,8 @@ newbtn.style.margin = "7px";
 // const handler3 = () => {
 //   console.log("You just clicked the button-handler 3");
 // };
+// btn.addEventListener("click", handler3);
+
 // btn.addEventListener("click", () => {
 //   console.log("You just clicked the button-handler 4");
 // });
@@ -1051,7 +1057,6 @@ newbtn.style.margin = "7px";
 //     body.classList.add("light");
 //     body.classList.remove("dark");
 //   }
-//   console.log(currMode);
 // });
 
 // let modebtn = document.querySelector("#Mode");
