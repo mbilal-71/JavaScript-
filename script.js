@@ -827,7 +827,7 @@ function newline() {
 // }
 // console.log(item);
 
-//  [OBJECTS]:
+//  [OBJECTS (Having state and behaviour(properties and method))]:
 
 //     var obj = {
 //   name: "Amir",
@@ -1074,6 +1074,62 @@ function newline() {
 //     body.classList.remove("light");
 //   }
 // });
+
+// [CLASSES & OBJECTS]:
+
+// const student = {
+//   fullName: "Bilal",
+//   marks: "94.4",
+//   printMarks: function () {
+//     console.log(this.marks);
+//   },
+// };
+// console.log(student);
+// console.log(student.printMarks());
+
+// const employe = {
+//   calcTax() {
+//     console.log("tax rate is 10%");
+//   },
+// };
+
+// const employe2 = {
+//   salary: 10000,
+// };
+
+// employe2.__proto__ = employe;
+// console.log(employe2);
+// console.log(employe2.calcTax());
+
+// [CLASS(Class is a program-code template for creating objects.Those object will have some state (variable) and some behaviour (functions) inside it)]:
+
+class ToyotaCar {
+  constructor(carname) {
+    console.log("Car created");
+    this.carname = carname;
+  }
+  start() {
+    console.log("Car started");
+  }
+  stop() {
+    console.log("Car stopped");
+  }
+  setbrand(Brand) {
+    this.brand = Brand;
+  }
+}
+
+let fortuner = new ToyotaCar("fortuner");
+console.log(fortuner);
+// fortuner.start();
+// fortuner.stop();
+// fortuner.setbrand("Toyota");
+// console.log(fortuner.brand);
+
+// let lexus = new ToyotaCar();
+// console.log(lexus);
+// lexus.setbrand("lexus");
+// console.log(lexus.brand);
 
 // [JSON File]:
 
