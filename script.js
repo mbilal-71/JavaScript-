@@ -1183,6 +1183,24 @@ function newline() {
 // console.log(obj);
 // console.log(obj1);
 
+// [ERROR HANDLING]:
+// try-catch
+// let a = 5;
+// let b = 10;
+// console.log(a);
+// console.log(b);
+// console.log(a + b);
+// try {
+//   console.log(a + c);
+// } catch (err) {
+//   console.log(err);
+// }
+
+// console.log(b);
+// console.log(b);
+
+// [ASYNC AWAIT >>> Promise CHAIN >>> Call back hell]:
+
 // [JSON File]:
 
 //     let jsonData = `{
