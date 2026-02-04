@@ -1103,24 +1103,25 @@ function newline() {
 
 // [CLASS(Class is a program-code template for creating objects.Those object will have some state (variable) and some behaviour (functions) inside it)]:
 
-class ToyotaCar {
-  constructor(carname) {
-    console.log("Car created");
-    this.carname = carname;
-  }
-  start() {
-    console.log("Car started");
-  }
-  stop() {
-    console.log("Car stopped");
-  }
-  setbrand(Brand) {
-    this.brand = Brand;
-  }
-}
+// class ToyotaCar {
+//   constructor(carname, milage) {
+//     console.log("Car created");
+//     this.carname = carname;
+//     this.milage = milage;
+//   }
+//   start() {
+//     console.log("Car started");
+//   }
+//   stop() {
+//     console.log("Car stopped");
+//   }
+//   setbrand(Brand) {
+//     this.brand = Brand;
+//   }
+// }
 
-let fortuner = new ToyotaCar("fortuner");
-console.log(fortuner);
+// let fortuner = new ToyotaCar("fortuner", "10kmph");
+// console.log(fortuner);
 // fortuner.start();
 // fortuner.stop();
 // fortuner.setbrand("Toyota");
@@ -1130,6 +1131,44 @@ console.log(fortuner);
 // console.log(lexus);
 // lexus.setbrand("lexus");
 // console.log(lexus.brand);
+
+// [INHERITANCE]:(Inheritance is passing down properties and methods from parent class to child class)
+
+// class parent {
+//   hello() {
+//     console.log("hello world");
+//   }
+// }
+
+// class child extends parent {}
+// let obj = new child();
+// console.log(obj);
+// obj.hello();
+// console.log(obj.hello());
+
+class person {
+  constructor() {
+    this.specie = "homo sapiens";
+  }
+  eat() {
+    console.log("eat");
+  }
+  sleep() {
+    console.log("sleep");
+  }
+}
+
+class engineer extends person {
+  work() {
+    console.log("solve problems, build things");
+  }
+}
+
+let obj = new engineer();
+console.log(obj);
+obj.work();
+obj.eat();
+obj.sleep();
 
 // [JSON File]:
 
