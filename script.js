@@ -1146,29 +1146,42 @@ function newline() {
 // obj.hello();
 // console.log(obj.hello());
 
-class person {
-  constructor() {
-    this.specie = "homo sapiens";
-  }
-  eat() {
-    console.log("eat");
-  }
-  sleep() {
-    console.log("sleep");
-  }
-}
+// class person {
+//   constructor(name) {
+//     this.specie = "homo sapiens";
+//     this.name = name;
+//   }
+//   eat() {
+//     console.log("eat");
+//   }
+//   sleep() {
+//     console.log("sleep");
+//   }
+// }
 
-class engineer extends person {
-  work() {
-    console.log("solve problems, build things");
-  }
-}
+// class engineer extends person {
+//   constructor(name, branch) {
+//     super(name);
+//     this.branch = branch;
+//   }
+//   work() {
+//     super.eat();
+//     console.log("solve problems, build things");
+//   }
+// }
 
-let obj = new engineer();
-console.log(obj);
-obj.work();
-obj.eat();
-obj.sleep();
+// let obj0 = new engineer();
+// console.log(obj);
+// obj0.work();
+// obj0.eat();
+// obj.sleep();
+
+// [SUPER KEYWORD]:(The super keyword is used to call the constructor of its parent class to access the parents properties and methods):
+
+// let obj = new engineer("ahmed", "chem eng");
+// let obj1 = new person("chem eng");
+// console.log(obj);
+// console.log(obj1);
 
 // [JSON File]:
 
