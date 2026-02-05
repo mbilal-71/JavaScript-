@@ -1203,6 +1203,10 @@ function newline() {
 // [SYNC IN JS]:
 // [SYNCHRONUS]:
 // [(Synchronous means the code runs in a particular sequence of instructions given in the program.Each instruction waits for the previous instruction to complete its execution)]
+console.log("one");
+console.log("two");
+console.log("three");
+
 // [Asynchronous]:
 //  [(due to synchronous programming sometimes important instructions get blocked due to some previous instructions which causes a delay in the UI Asynchronous code execution allows to execute next instructions immediately and doesn't block the flow)]
 

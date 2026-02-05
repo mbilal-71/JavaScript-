@@ -1,23 +1,23 @@
-let DATA = " Do not fetch it. This is secret info";
-class User {
-  constructor(name, email) {
-    this.name = name;
-    this.email = email;
-  }
-  viewData() {
-    console.log("Data =", DATA);
-  }
-}
+// let DATA = " Do not fetch it. This is secret info";
+// class User {
+//   constructor(name, email) {
+//     this.name = name;
+//     this.email = email;
+//   }
+//   viewData() {
+//     console.log("Data =", DATA);
+//   }
+// }
 
-class Admin extends User {
-  constructor(name, email, role) {
-    super(name, email);
-    this.role = role;
-  }
-  editData() {
-    DATA = "some new value";
-  }
-}
+// class Admin extends User {
+//   constructor(name, email, role) {
+//     super(name, email);
+//     this.role = role;
+//   }
+//   editData() {
+//     DATA = "some new value";
+//   }
+// }
 
 // [In case if user not provides email]:
 
