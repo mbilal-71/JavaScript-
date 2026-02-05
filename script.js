@@ -1203,12 +1203,69 @@ function newline() {
 // [SYNC IN JS]:
 // [SYNCHRONUS]:
 // [(Synchronous means the code runs in a particular sequence of instructions given in the program.Each instruction waits for the previous instruction to complete its execution)]
-console.log("one");
-console.log("two");
-console.log("three");
+// console.log("one");
+// console.log("two");
+// console.log("three");
 
 // [Asynchronous]:
 //  [(due to synchronous programming sometimes important instructions get blocked due to some previous instructions which causes a delay in the UI Asynchronous code execution allows to execute next instructions immediately and doesn't block the flow)]
+
+// function hello() {
+//   console.log("hello");
+// }
+// setTimeout(hello, 2000);
+
+// setTimeout(() => {
+//   console.log("hello");
+// }, 2000);
+
+// console.log("one");
+// console.log("two");
+// console.log("three");
+// setTimeout(() => {
+//   console.log("hello");
+// }, 2000);
+// console.log("four");
+
+// [CALLBACK FUNCTION]:
+
+function sum(a, b) {
+  console.log(a + b);
+}
+function Calculate(a, b, sumCallback) {
+  sumCallback(a, b);
+}
+Calculate(5, 7, sum);
+
+// 1) Callback functions (logic)
+// function add(a, b) {
+//   console.log("Addition:", a + b);
+// }
+
+// function subtract(a, b) {
+//   console.log("Subtraction:", a - b);
+// }
+
+// function multiply(a, b) {
+//   console.log("Multiplication:", a * b);
+// }
+
+// function divide(a, b) {
+//   if (b !== 0) {
+//     console.log("Division:", a / b);
+//   } else {
+//     console.log("Division by zero not allowed!");
+//   }
+// }
+
+// function CALCULATOR(a, b, operationCallback) {
+//   operationCallback(a, b);
+// }
+
+// CALCULATOR(10, 5, add);
+// CALCULATOR(10, 5, subtract);
+// CALCULATOR(10, 5, multiply);
+// CALCULATOR(10, 5, divide);
 
 // [JSON File]:
 
