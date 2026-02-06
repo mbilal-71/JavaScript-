@@ -1290,21 +1290,40 @@ function newline() {
 // CALCULATOR(10, 5, "multiply");
 // CALCULATOR(10, 5, "divide");
 
-// [CALLBACK-HELL]:
+// [CALLBACK-HELL]: //NESTED CALL-BACK(Nested callbacks stack below one another forming a pyramid structure This style of programming becomes difficult to understand & manage)
 
+// takes 2 sec to send data
 function getData(dataid, getnextdata) {
-  //takes 2 sec to send data
-  setTimeout(() => {
-    console.log(dataid);
-    if (getnextdata) {
-      getnextdata();
-    }
-  }, 2000);
+  return new Promise((resolve, reject) => {
+    setTimeout(() => {
+      console.log(dataid);
+      resolve("success");
+      if (getnextdata) {
+        getnextdata();
+      }
+    }, 2000);
+  });
 }
-getData(7110, () => {
-  getData(7156);
-});
 
+// getData(7110, () => {
+//one callback function inside other
+// getData(7100, () => {
+// getData(7520);
+// });
+// });
+
+let result = getData(7110);
+console.log(result);
+console.log(result);
+
+// [PROMISES(Promises for "eventual" completion of task. it is an object in Javascript. it is solution to callback)]:
+
+// let promise = new Promise((resolve, reject) => {
+// console.log("I am a promise");
+// resolve(123);
+//   reject("some errror occured");
+// });
+// console.log(promise);
 // [JSON File]:
 
 //     let jsonData = `{
