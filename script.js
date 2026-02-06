@@ -1293,18 +1293,14 @@ function newline() {
 // [CALLBACK-HELL]: //NESTED CALL-BACK(Nested callbacks stack below one another forming a pyramid structure This style of programming becomes difficult to understand & manage)
 
 // takes 2 sec to send data
-// function getData(dataid, getnextdata) {
-//   return new Promise((resolve, reject) => {
-//     setTimeout(() => {
-//       console.log(dataid);
-//       resolve("success");
-//       reject("error");
-//       if (getnextdata) {
-//         getnextdata();
-//       }
-//     }, 2000);
-//   });
-// }
+function getData(dataid) {
+  return new Promise((resolve, reject) => {
+    setTimeout(() => {
+      console.log(dataid);
+      resolve("success");
+    }, 2000);
+  });
+}
 
 // getData(7110, () => {
 //   // one callback function inside other
@@ -1315,6 +1311,53 @@ function newline() {
 
 // let result = getData(7110);
 // console.log(result);
+
+// [ASYNC-AWAIT]:
+
+// async function getAllData() {
+//   console.log("Loading data 1...");
+//   await getData(1);
+//   console.log("Loading data 2...");
+//   await getData(2);
+//   console.log("Loading data 3...");
+//   await getData(3);
+// }
+// console.log(getAllData());
+
+// [IIFE]:(Immediately Invoked Function Expression is the Javascript function that run as soon as it is defined)
+
+// (async function () {
+//   console.log("Loading data 1...");
+//   await getData(1);
+//   console.log("Loading data 2...");
+//   await getData(2);
+//   console.log("Loading data 3...");
+//   await getData(3);
+// })();
+
+// (async () => {
+//   console.log("Loading data 1...");
+//   await getData(1);
+//   console.log("Loading data 2...");
+//   await getData(2);
+//   console.log("Loading data 3...");
+//   await getData(3);
+// })();
+
+// [PROMISE CHAIN]:
+
+// getData(1)
+//   .then((res) => {
+//     return getData(2);
+//   })
+//   .then((res) => {
+//     return getData(3);
+//   })
+//   .then((res) => {
+//     return getData(4);
+//   })
+//   .then((res) => {
+//     console.log(res);
 
 // [PROMISES(Promises for "eventual" completion of task. it is an object in Javascript. it is solution to callback)]:
 
@@ -1338,30 +1381,51 @@ function newline() {
 
 // [PROMISE CHAINing]:
 
-function asynFunc1() {
-  return new Promise((resolve, reject) => {
-    setTimeout(() => {
-      console.log("Data 1 has been loaded");
-      resolve("success");
-    }, 2000);
-  });
-}
-function asynFunc2() {
-  return new Promise((resolve, reject) => {
-    setTimeout(() => {
-      console.log("Data 2 has been loaded");
-      resolve("success");
-    }, 4000);
-  });
-}
-console.log("Loading data 1...");
-let p1 = asynFunc1();
-p1.then((res) => {
-  console.log(res);
-  console.log("Loading data 2...");
-  let p2 = asynFunc2();
-  p1.then((res) => {});
-});
+// function asynFunc1() {
+//   return new Promise((resolve, reject) => {
+//     setTimeout(() => {
+//       console.log("Data 1 has been loaded");
+//       resolve("success");
+//     }, 2000);
+//   });
+// }
+// function asynFunc2() {
+//   return new Promise((resolve, reject) => {
+//     setTimeout(() => {
+//       console.log("Data 2 has been loaded");
+//       resolve("success");
+//     }, 4000);
+//   });
+// }
+// console.log("Loading data 1...");
+// let p1 = asynFunc1();
+// p1.then((res) => {
+//   console.log(res);
+//   console.log("Loading data 2...");
+//   let p2 = asynFunc2();
+//   p1.then((res) => {});
+// });
+
+// [ASYNC-AWAIT]:
+
+// async function hello(params) {
+//   console.log("hello world!");
+// }
+// console.log(hello());
+
+// function api() {
+//   return new Promise((resolve, reject) => {
+//     setTimeout(() => {
+//       console.log("weather data");
+//       resolve(200);
+//     }, 2000);
+//   });
+// }
+// async function getweatherdata() {
+//   await api();//1st call
+//   await api();//2nd call
+// }
+// console.log(getweatherdata());
 
 // [JSON File]:
 
