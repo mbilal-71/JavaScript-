@@ -1296,8 +1296,9 @@ function newline() {
 function getData(dataid, getnextdata) {
   return new Promise((resolve, reject) => {
     setTimeout(() => {
-      console.log(dataid);
-      resolve("success");
+      // console.log(dataid);
+      // resolve("success");
+      reject("error");
       if (getnextdata) {
         getnextdata();
       }
@@ -1306,14 +1307,13 @@ function getData(dataid, getnextdata) {
 }
 
 // getData(7110, () => {
-//one callback function inside other
-// getData(7100, () => {
-// getData(7520);
-// });
+//   // one callback function inside other
+//   getData(7100, () => {
+//     getData(7520);
+//   });
 // });
 
 let result = getData(7110);
-console.log(result);
 console.log(result);
 
 // [PROMISES(Promises for "eventual" completion of task. it is an object in Javascript. it is solution to callback)]:
