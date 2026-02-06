@@ -1229,13 +1229,13 @@ function newline() {
 
 // [CALLBACK FUNCTION]:
 
-function sum(a, b) {
-  console.log(a + b);
-}
-function Calculate(a, b, sumCallback) {
-  sumCallback(a, b);
-}
-Calculate(5, 7, sum);
+// function sum(a, b) {
+//   console.log(a + b);
+// }
+// function Calculate(a, b, sumCallback) {
+//   sumCallback(a, b);
+// }
+// Calculate(5, 7, sum);
 
 // 1) Callback functions (logic)
 // function add(a, b) {
@@ -1258,14 +1258,52 @@ Calculate(5, 7, sum);
 //   }
 // }
 
-// function CALCULATOR(a, b, operationCallback) {
-//   operationCallback(a, b);
+// function CALCULATOR(a, b, operation) {
+//   operation(a, b);
 // }
 
 // CALCULATOR(10, 5, add);
 // CALCULATOR(10, 5, subtract);
 // CALCULATOR(10, 5, multiply);
 // CALCULATOR(10, 5, divide);
+
+// function CALCULATOR(a, b, operation) {
+//   switch (operation) {
+//     case "add":
+//       console.log("Addition:", a + b);
+//       break;
+//     case "subtract":
+//       console.log("Subtraction:", a - b);
+//       break;
+//     case "multiply":
+//       console.log("Multiplication:", a * b);
+//       break;
+//     case "divide":
+//       if (b !== 0) console.log("Division:", a / b);
+//       else console.log("Division by zero not allowed!");
+//       break;
+//   }
+// }
+
+// CALCULATOR(10, 5, "add");
+// CALCULATOR(10, 5, "subtract");
+// CALCULATOR(10, 5, "multiply");
+// CALCULATOR(10, 5, "divide");
+
+// [CALLBACK-HELL]:
+
+function getData(dataid, getnextdata) {
+  //takes 2 sec to send data
+  setTimeout(() => {
+    console.log(dataid);
+    if (getnextdata) {
+      getnextdata();
+    }
+  }, 2000);
+}
+getData(7110, () => {
+  getData(7156);
+});
 
 // [JSON File]:
 
