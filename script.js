@@ -1293,18 +1293,18 @@ function newline() {
 // [CALLBACK-HELL]: //NESTED CALL-BACK(Nested callbacks stack below one another forming a pyramid structure This style of programming becomes difficult to understand & manage)
 
 // takes 2 sec to send data
-function getData(dataid, getnextdata) {
-  return new Promise((resolve, reject) => {
-    setTimeout(() => {
-      // console.log(dataid);
-      // resolve("success");
-      reject("error");
-      if (getnextdata) {
-        getnextdata();
-      }
-    }, 2000);
-  });
-}
+// function getData(dataid, getnextdata) {
+//   return new Promise((resolve, reject) => {
+//     setTimeout(() => {
+//       console.log(dataid);
+//       resolve("success");
+//       reject("error");
+//       if (getnextdata) {
+//         getnextdata();
+//       }
+//     }, 2000);
+//   });
+// }
 
 // getData(7110, () => {
 //   // one callback function inside other
@@ -1313,17 +1313,56 @@ function getData(dataid, getnextdata) {
 //   });
 // });
 
-let result = getData(7110);
-console.log(result);
+// let result = getData(7110);
+// console.log(result);
 
 // [PROMISES(Promises for "eventual" completion of task. it is an object in Javascript. it is solution to callback)]:
 
-// let promise = new Promise((resolve, reject) => {
-// console.log("I am a promise");
-// resolve(123);
-//   reject("some errror occured");
+// const getPromise = () => {
+//   return new Promise((resolve, reject) => {
+//     console.log("I am a Promise");
+//     resolve("Success");
+//       reject("Some unknown error occured");
+//   });
+// };
+
+// let promise = getPromise();
+// promise.then((res) => {
+//   console.log("Promise fulfilled", res);
 // });
+// promise.catch((err) => {
+//   console.log("Promise unfulfilled", err);
+// });
+
 // console.log(promise);
+
+// [PROMISE CHAINing]:
+
+function asynFunc1() {
+  return new Promise((resolve, reject) => {
+    setTimeout(() => {
+      console.log("Data 1 has been loaded");
+      resolve("success");
+    }, 2000);
+  });
+}
+function asynFunc2() {
+  return new Promise((resolve, reject) => {
+    setTimeout(() => {
+      console.log("Data 2 has been loaded");
+      resolve("success");
+    }, 4000);
+  });
+}
+console.log("Loading data 1...");
+let p1 = asynFunc1();
+p1.then((res) => {
+  console.log(res);
+  console.log("Loading data 2...");
+  let p2 = asynFunc2();
+  p1.then((res) => {});
+});
+
 // [JSON File]:
 
 //     let jsonData = `{
