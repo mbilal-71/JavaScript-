@@ -1427,7 +1427,38 @@ function getData(dataid) {
 // }
 // console.log(getweatherdata());
 
-// [JSON File]:
+//[FETCH-API(Application Programming Interference)]:
+
+const URL = "https://dog.ceo/api/breeds/image/random";
+const factpara = document.querySelector("#fact");
+const btn = document.querySelector("#btn");
+
+// const getFacts = async () => {
+//   console.log("Wait getting data....");
+//   let response = await fetch(URL);
+//   console.log(response);
+//   let data = await response.json();
+//   console.log(data.message);
+//   factpara.innerText = data.message;
+// };
+// getFacts();
+
+function getFacts() {
+  fetch(URL)
+    .then((response) => {
+      return response.json();
+    })
+    .then((data) => {
+      console.log(data);
+      factpara.innerText = data.message;
+    });
+}
+
+btn.addEventListener("click", getFacts);
+
+// [JSON File(Javascript Object Notation)]:
+
+// json() method: (Returns a second promise that resolves with the result of parsing the response body text as JSON. input is JSON output is JS object)
 
 //     let jsonData = `{
 //   "name": "Ali",
@@ -1435,4 +1466,4 @@ function getData(dataid) {
 // }`;
 
 //     let obj = JSON.parse(jsonData)
-//     console.log(obj.age)
+//     console.log(obj.age);
