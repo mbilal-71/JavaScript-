@@ -1,6 +1,6 @@
 // [Variables are containers for data]
 
-// [VARABLE IN JS,(Again declear and assign both possible) global space variable]:
+// [Var IN JS,(Again declear and assign both possible) global space variable]:
 
 // var A = "5 <br>" ;
 // document.write(A);
@@ -36,8 +36,8 @@
 
 //[TEMPLATE LITERALES IN JS ``(a way to have embed expression in string)]:
 
-// let specialStrring = `This is template literal in js`;
-// console.log(specialStrring);
+// let specialString = `This is template literal in js`;
+// console.log(specialString);
 
 // let obj = {
 //   item: "pen",
@@ -57,7 +57,7 @@
 
 // let str = "hellololo";
 // // console.log(str.replaceAll("lo", "p"));
-// console.log(str.charAt(0));
+// console.log(str.charAt(2));
 // let strr1 = "abcdefgh";
 // // console.log(strr1.toUpperCase());
 // console.log(strr1.replace("h", "y"));
@@ -88,30 +88,30 @@
 // [IF/ELSE DRIVING CHECK FUNCTION WITH INNER HTML]:
 
 // function checkdrivingEligibility() {
-//     let age = document.getElementById("any").value;
-//     let result = document.getElementById("result");
+//   let age = document.getElementById("any").value;
+//   let result = document.getElementById("result");
 
-//     if (age >= 18) {
-//         result.innerHTML = "You are eligible to drive.";
-//     } else {
-//         result.innerHTML = "You are not eligible to drive.";
-//     }
+//   if (age >= 18) {
+//     result.innerText = "You are eligible to drive.";
+//   } else {
+//     result.innerText = "You are not eligible to drive.";
+//   }
 // }
 
-// let mode = "dark";
+// let mode = "blue";
 // let color;
 
-// if (mode==="dark"){
-//   color ="black";
-// } else if(mode==="blue"){
+// if (mode === "dark") {
+//   color = "black";
+// } else if (mode === "blue") {
 //   color = "blue";
-// } else if(mode==="pink"){
+// } else if (mode === "pink") {
 //   color = "pink";
 // } else {
 //   color = "white";
 // }
 
-// document.write(color)
+// document.write(color);
 
 //[CHECKING EVEN OR ODD NUMBER]:
 
@@ -122,37 +122,38 @@
 //   document.write(num , " is odd")
 // }
 
-// let i = 0
-// for (i=0;i<=100;i++){
-//    if (i%2===0){
-//   console.log(i)
-// }
+// let i = 0;
+// for (i = 0; i <= 100; i++) {
+//   if (i % 2 === 0) {
+//     console.log(i);
+//   }
 // }
 
-// let i = 0
-// for (i=0;i<=100;i++){
-//    if (i%2!==0){
-//   console.log(i)
-// }
+// let i = 0;
+// for (i = 0; i <= 100; i++) {
+//   if (i % 2 !== 0) {
+//     console.log(i);
+//   }
 // }
 
 // [TERNARY OPERATOR (A ? B : C)]:
 
 // let age = 17;
-// let result = age > 18 ? "yes" : "no";
-// document.write(result);
+// let result = age > 18 ? "YES" : "NO";
+// console.log(result);
 
 // [ALERT BOX]:
 
-// alert ("hello");
+// alert("hello");
 
-// var value = confirm("Do you like apple?")
-// var result = value? "yes i like" : "i dont like";
+// var value = confirm("Do you like apple?");
+// var result = value ? "yes i like" : "i dont like";
+// console.log(result);
 
 // [PROMPT BOX]:
 
-// let name = prompt ("Write any thing!:");
-// document.write(name)
+// let name = prompt("Write any thing!:");
+// console.log(name);
 
 // [GRADING SYSTEM IF/ELSE]:
 
@@ -171,13 +172,18 @@
 
 // [ADDITIONAL OPERATOR]:
 
-// var a = prompt (15)
-// var b = prompt (10)
-// if (op == '+'){
-//   document.write(a+b);
+// var a = prompt("Enter 1st number");
+// var opp = prompt(" Enter Operator(+, -, *, /)");
+// var b = prompt("Enter 2nd number");
+// a = Number(a);
+// b = Number(b);
+// if (opp == "+") {
+//   console.log90(a + b);
+// } else {
+//   console.error("Invalid operator!90");
 // }
 
-//[UNARY OPERATOR]:
+//[UNI-ARY OPERATOR]:
 
 // let i = 5
 
@@ -195,45 +201,45 @@
 
 //[CHECKS VALUES WHICH ARE NOT EQUAL TO]:
 
-// let x = 8
-// let y = 4
-// document.write(x!=y);
+// let x = 8;
+// let y = 4;
+// document.write(x != y);
 
 // [Modulus Operator]:
 
-// let a = 5
-// let b = 2
-// document.write(5%2)
+// let a = 5;
+// let b = 2;
+// document.write(5 % 2);
 // document.write(a**b)
 
 // [LOGICAL OPERATORS]:
 
 // [AND && operator (Both conditions should be true)]:
 
-//    let a = 6;
-//   let b = 8;
+// let a = 6;
+// let b = 8;
 
-//   let cond1 = a<b
-// let cond2 = a===6
-// document.write(cond1&&cond2);
+// let cond1 = a < b;
+// let cond2 = a === 6;
+// document.write(cond1 && cond2);
 
 // [OR || OPERATOR(If only one condition true,result will be true)]:
 
-//    let a = 6;
-//   let b = 8;
+// let a = 6;
+// let b = 8;
 
-//   let cond1 = a<b
-// let cond2 = a===5 //false
+// let cond1 = a < b;
+// let cond2 = a === 5; //false
 // document.write(cond1 || cond2);
 
 // [NOT ! OPERATOR(It reverts the value, true-->false and false-->true)]:
 
-//    let a = 8;
-//   let b = 6;
+// let a = 8;
+// let b = 6;
 
-//   let cond1 = a > b
-// let cond2 = a === 6
-// document.write(!(cond1));
+// let cond1 = a > b;
+// let cond2 = a === 6;
+// document.write(!cond1);
 
 // [CALCULATOR USING OPERATORS]:
 
@@ -261,6 +267,10 @@
 
 // [*NEWLINE FUNCTION]:
 
+// function newline() {
+//   document.write("<br>");
+// }
+
 // document.write("Hello");
 // newline();
 // document.write("World");
@@ -268,27 +278,19 @@
 // document.write("how are you");
 // }
 
-function newline() {
-  document.write("<br>");
-}
-
 // [*GREET FUNCTION]:
 
-// function greet(Ahmed,Ali){
+// function greet(Ahmed, Ali) {
 //   document.write("How are you?" + "   " + Ahmed + "   " + Ali);
 // }
-//   greet("Ahmed","Ali")
-
-// [*FUNCTION GREET WITH NEWLINE]:
+// greet("Ahmed", "Ali");
 
 // function greet(name1, name2) {
 //   document.write("How are you?" + "  " + name1 + "  " + name2);
 // }
-// greet("Ahmed", "Ali");
-// newline();
-// newline();
+// greet("Ahmed", "Raza");
 
-// [*FUNCTION SUM WITH NEWLINE]:
+// [*FUNCTION SUM]:
 
 // function sum(a,b){
 //   document.write(a+b);
@@ -307,19 +309,18 @@ function newline() {
 
 // [*MULTIPLICATION]:
 
-// let a = Number (prompt("Enter 1st no"));
-// let b = Number (prompt("Enter 2nd no"));
-// let multiply = (a*b)
-// {
-//   document.write("Ans =" + multiply)
-// }
+// let a = Number(prompt("Enter 1st no"));
+// let b = Number(prompt("Enter 2nd no"));
+// let multiply = a * b;
+
+// document.write("Ans =" + multiply);
 
 // [PRINT FUNCTION]:
 
 // function print() {
 //   document.write("What's Up?");
 // }
-
+// print();
 // [SWITCH]:
 // let x = prompt ("Which fruit do you like?")
 // switch (x) {
@@ -1293,14 +1294,14 @@ function newline() {
 // [CALLBACK-HELL]: //NESTED CALL-BACK(Nested callbacks stack below one another forming a pyramid structure This style of programming becomes difficult to understand & manage)
 
 // takes 2 sec to send data
-function getData(dataid) {
-  return new Promise((resolve, reject) => {
-    setTimeout(() => {
-      console.log(dataid);
-      resolve("success");
-    }, 2000);
-  });
-}
+// function getData(dataid) {
+//   return new Promise((resolve, reject) => {
+//     setTimeout(() => {
+//       console.log(dataid);
+//       resolve("success");
+//     }, 2000);
+//   });
+// }
 
 // getData(7110, () => {
 //   // one callback function inside other
@@ -1429,9 +1430,9 @@ function getData(dataid) {
 
 //[FETCH-API(Application Programming Interference)]:
 
-const URL = "https://dog.ceo/api/breeds/image/random";
-const factpara = document.querySelector("#fact");
-const btn = document.querySelector("#btn");
+// const URL = "https://dog.ceo/api/breeds/image/random";
+// const factpara = document.querySelector("#fact");
+// const btn = document.querySelector("#btn");
 
 // const getFacts = async () => {
 //   console.log("Wait getting data....");
@@ -1443,18 +1444,18 @@ const btn = document.querySelector("#btn");
 // };
 // getFacts();
 
-function getFacts() {
-  fetch(URL)
-    .then((response) => {
-      return response.json();
-    })
-    .then((data) => {
-      console.log(data);
-      factpara.innerText = data.message;
-    });
-}
+// function getFacts() {
+//   fetch(URL)
+//     .then((response) => {
+//       return response.json();
+//     })
+//     .then((data) => {
+//       console.log(data);
+//       factpara.innerText = data.message;
+//     });
+// }
 
-btn.addEventListener("click", getFacts);
+// btn.addEventListener("click", getFacts);
 
 // [JSON File(Javascript Object Notation)]:
 
