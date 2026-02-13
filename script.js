@@ -321,28 +321,32 @@
 //   document.write("What's Up?");
 // }
 // print();
+
 // [SWITCH]:
-// let x = prompt ("Which fruit do you like?")
+
+// let x = prompt("Which fruit do you like?");
 // switch (x) {
-// case "apple":
-// document.write("I like apples."); break;
-// case "mango":
-// document.write("I like mangoes."); break;
-// default:
-// document.write("I like all Fruits");
+//   case "apple":
+//     document.write("I like apples.");
+//     break;
+//   case "mango":
+//     document.write("I like mangoes.");
+//     break;
+//   default:
+//     document.write("I like all Fruits");
 // }
 
 // [FOR LOOP]:
 
-// for (var i = 100; i>0; i= i-1){
+// for (var i = 100; i > 0; i--) {
 //   document.write(i + "<br> ");
 // }
 
 // let sum = 0;
-// for (i=1;i<=5;i++){
-//   sum = sum + i
+// for (i = 1; i <= 5; i++) {
+//   sum = sum + i;
 // }
-// document.write(sum)
+// document.write(sum);
 
 // [WHILE LOOP]:
 
@@ -364,7 +368,7 @@
 
 // [DO/WHILE LOOP]:
 
-// var i = 1;
+// var i = 0;
 // do {
 //   document.write(i + "<br>");
 //   i++;
@@ -376,19 +380,19 @@
 // let size = 0;
 // for (let val of str) {
 //   console.log(val);
-//   //   size++
+//   size++;
 // }
-// console.log(size)
+// console.log(size);
 
 //[FOR/IN LOOP(used for objects)]:
 
 // let student = {
-//   Name : "Ali",
-//   Age : 21,
-//   CGPA : 4
+//   Name: "Ali",
+//   Age: 21,
+//   CGPA: 4,
 // };
-// for (let key in student){
-//   console.log(key, student[key])
+// for (let key in student) {
+//   console.log(key, student[key]);
 // }
 
 // [FUNCTION WITH RETURN]:
@@ -424,7 +428,7 @@
 //       count++;
 //     }
 //   }
-//   console.log(count);
+//   return count;
 // }
 // console.log(countVowels("bilal"));
 
@@ -441,7 +445,7 @@
 //       count++;
 //     }
 //   }
-//   console.log(count);
+//   return count;
 // };
 // console.log(countVowels("bilal"));
 
@@ -449,8 +453,8 @@
 
 // [Counting upto 100]:
 
-// for (let a = 1; a<=100 ; a+=10) {
-//   for (var b = a; b<a+10; b+=1){
+// for (let a = 1; a <= 100; a += 10) {
+//   for (var b = a; b < a + 10; b += 1) {
 //     document.write(b + " |  ");
 //   }
 //   document.write("<br>");
@@ -458,17 +462,17 @@
 
 // [Counting upto 10]:
 
-// for (let a = 1; a <= 5; a += 1) {
-//   for (let b = a; b <= a + 5; b += 1) {
-//     document.write(b + "    |    ");
-//   }
-//   document.write("<br>");
-// }
+for (let a = 1; a <= 5; a += 1) {
+  for (let b = a; b <= a + 5; b += 1) {
+    document.write(b + "    |    ");
+  }
+  document.write("<br>");
+}
 
 // [Example]:
 
-// for (var a = 1; a<=5; a+=1){
-//   for (var b = 1; b<=a; b++){
+// for (var a = 1; a <= 5; a += 1) {
+//   for (var b = 1; b <= a; b++) {
 //     document.write(b);
 //   }
 //   document.write("<br>");
