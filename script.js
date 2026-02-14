@@ -664,9 +664,7 @@ function newline() {
 //[arr.MAP]:
 
 // let arr = [67, 54, 87];
-// let newArray = arr.map((val) => {
-//   return val;
-// });
+// let newArray = arr.map((a) => a + 10);
 // console.log(newArray);
 
 //[arr.FILTER]:
@@ -680,12 +678,15 @@ function newline() {
 //[arr.REDUCE]:
 
 // let arr = [1, 2, 3, 4];
+
 // let output = arr.reduce((pre, curr) => {
 //   return pre * curr;
 // });
+
 // let output = arr.reduce((pre, curr) => {
 //   return pre > curr ? pre : curr;
 // });
+
 // console.log(output);
 
 // let marks = [97, 87, 65, 43, 90, 93];
@@ -698,7 +699,7 @@ function newline() {
 // let arr = [];
 
 // for (let i = 1; i <= n; i++) {
-//   arr[i - 1] = i;
+//   [i-1] = i ;
 // }
 // console.log(arr);
 
@@ -706,6 +707,7 @@ function newline() {
 //   return prev + curr;
 // });
 // console.log(sum);
+
 // let product = arr.reduce((prev, curr) => {
 //   return prev * curr;
 // });
@@ -717,17 +719,19 @@ function newline() {
 // for (let i = 1; i <= n; i++) {
 //   arr.push(i);
 // }
+// console.log(arr);
 
-// // let sum = arr.reduce((p, c) => p + c, 0);
-// // let product = arr.reduce((p, c) => p * c, 1);
-
+// let sum = arr.reduce((p, c) => p + c, 0);
+// let product = arr.reduce((p, c) => p * c, 1);
 // console.log(arr, sum, product);
 
 // [NEW ARRAY()]:
 
-// var arr= new Array([1,2,3,4);
-// document.write(arr.indexOf(2));
-// document.write("<br>")
+// var arr = new Array([1, 2, 3, 4], [5, 6, 7, 8]);
+// document.write(arr[0].indexOf(2));
+// newline();
+// document.write(arr[1].indexOf(5));
+// newline();
 // document.write(arr[0][3]);
 
 // [arr.indexOf]:
@@ -737,22 +741,22 @@ function newline() {
 
 // [arr.sort/ reverse]:
 
-// var arr= [3,2,1,4]
+// var arr = [3, 2, 1, 4];
 // document.write(arr.sort());
 // newline();
 // document.write(arr.sort().reverse());
 
 // var arr = [5, 2, 9, 1, 7];
 // arr.sort(function (a, b) {
-//   return a-b;
+//   return a - b;
 // });
 // document.write(arr);
 
-//  var arr = [5,4,8,1]
-//  arr.sort(function(a,b){
-//   return b-a;
-//  });
-//  document.write(arr[0])
+// var arr = [5, 4, 8, 1];
+// arr.sort(function (a, b) {
+//   return b - a;
+// });
+// document.write(arr[0]);
 
 // [arr.pop/push]:
 
@@ -774,12 +778,6 @@ function newline() {
 // ];
 // document.write(ary[0][0]);
 
-// for (var a = 0; a < ary.length; a++) {
-//   for (b = 0; b < ary[a].length; b++) {
-//     document.write(ary[a][b] + " | ");
-//   }
-//   document.write("<br>");
-
 // var ary = [
 //   ["Amir", "Male", 21, "BSCS"],
 //   ["Asim", "Male", 21, "BSSE"],
@@ -791,26 +789,31 @@ function newline() {
 //   for (var b = 0; b < ary[a].length; b++) {
 //     document.write(ary[a][b] + " | ");
 //   }
-//   document.write("<br>");
-// newline();
+//   newline();
 // }
 
-// let heroes = ["spiderman", "ironman", "hulk", "thor"];
-// // for (let el of heroes) {
-// //   console.log(el);
-// // }
+let heroes = ["spiderman", "ironman", "hulk", "thor"];
+
+// heroes.forEach((element) => {
+//   console.log(element);
+// });
+
+// for (let elmt of heroes) {
+//   console.log(elmt);
+// }
+
 // for (i = 0; i < heroes.length; i++) {
 //   console.log(heroes[i]);
 // }
 
-// let marks = [85, 97, 44, 37, 76, 60];
+// let marks = [85, 97, 44, 38, 76, 60];
 // let sum = 0;
 // for (let val of marks) {
-//   sum += val;
+//   sum = sum + val;
 // }
 // let avg = sum / marks.length;
 // console.log(sum);
-// console.log(`Avg marks of class is ${avg}`);
+// console.log(`Avg marks of class is ${avg.toFixed(2)}`);
 
 // let item = [500, 600, 700, 800];
 
@@ -841,12 +844,12 @@ function newline() {
 // var obj = {name:"Amir",age:21,gender:"Male"}
 // document.write(obj.name);
 
-//  var obj2 = new Object();
-//  obj2.name = "Asim"
-//  document.write(obj2.name);
+// var obj2 = new Object();
+// obj2.name = "Asim";
+// document.write(obj2.name);
 
-//  var currentDate = new Date;
-//   document.write(currentDate);
+// var currentDate = new Date();
+// document.write(currentDate);
 
 // var ary = new Object();
 // ary.name = "amir";
@@ -858,8 +861,11 @@ function newline() {
 //   gender: "Male",
 // };
 
+// var keys = Object.keys(obj);
+// console.log(keys);
+
 // for (let key in obj) {
-//   document.write(obj[key] + "<br>");
+//   document.write(key + ":" + obj[key] + "<br>");
 // }
 
 // [DOM (DOCUMENT OBJECT MODEL) Dom tree includes--> Tree nodes, Comments, Elements(these'r Majors)]:
@@ -977,7 +983,7 @@ function newline() {
 
 // let para = document.querySelector("p");
 // para.remove();
-// // newHeading.remove();
+// newHeading.remove();
 
 //[PRACTICE QUESTIONS]:
 
