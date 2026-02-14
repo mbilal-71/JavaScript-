@@ -566,7 +566,7 @@ function newline() {
 // newline();
 // document.write(fruits[2]);
 // newline();
-// document.write(fruits[3])
+// document.write(fruits[3]);
 
 // [Ex#3]:
 
@@ -589,7 +589,7 @@ function newline() {
 
 // let nums = [10, 20, 30, 40];
 // for (let i = 1; i < nums.length; i++) {
-//   document.write(nums[i] , "<br>");
+//   document.write(nums[i], "<br>");
 // }
 
 // [Ex#7]:
