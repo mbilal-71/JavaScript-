@@ -267,9 +267,9 @@
 
 // [*NEWLINE FUNCTION]:
 
-// function newline() {
-//   document.write("<br>");
-// }
+function newline() {
+  document.write("<br>");
+}
 
 // document.write("Hello");
 // newline();
@@ -462,16 +462,16 @@
 
 // [Counting upto 10]:
 
-for (let a = 1; a <= 5; a += 1) {
-  for (let b = a; b <= a + 5; b += 1) {
-    document.write(b + "    |    ");
-  }
-  document.write("<br>");
-}
+// for (let a = 1; a <= 5; a++) {
+//   for (let b = a; b <= a + 5; b++) {
+//     document.write(b + "    |    ");
+//   }
+//   document.write("<br>");
+// }
 
 // [Example]:
 
-// for (var a = 1; a <= 5; a += 1) {
+// for (var a = 1; a <= 5; a ++) {
 //   for (var b = 1; b <= a; b++) {
 //     document.write(b);
 //   }
@@ -480,26 +480,26 @@ for (let a = 1; a <= 5; a += 1) {
 
 // [STARS EXAMPLE]:
 
-// for (var a = 5; a>=1; a-- ){
-//   for (var c =5; c>=1+a; c--){
-//   document.write("&nbsp;")
-// }
-//   for (var b = 1; b<=a; b++){
-//     document.write("*"+ " ");
+// for (var a = 5; a >= 1; a--) {
+//   for (var c = 5; c >= 1 + a; c--) {
+//     document.write("&nbsp;");
+//   }
+//   for (var b = 1; b <= a; b++) {
+//     document.write("*" + " ");
 //   }
 //   document.write("<br>");
 // }
 
 // for (var a = 1; a <= 5; a++) {
-//  for(c = 1; c<=5-a; c++){
-//    document.write("&nbsp;");
-//    }
+//   for (c = 1; c <= 5 - a; c++) {
+//     document.write("&nbsp;");
+//   }
 
 //   for (var b = 1; b <= a; b++) {
 //     document.write("*" + " ");
-//      }
-//    document.write("<br>");
-//     }
+//   }
+//   document.write("<br>");
+// }
 
 // [CLICKED FUNCTION]:
 
@@ -507,31 +507,31 @@ for (let a = 1; a <= 5; a += 1) {
 //   document.write("Hello World")
 // }
 
-// for ( var a=1; a<=4; a++){
-//   for (var b=1; b<=a; b++){
-//     document.write(`${a*b} `);
+// for (var a = 1; a <= 4; a++) {
+//   for (var b = 1; b <= a; b++) {
+//     document.write(`${a * b} `);
 //   }
-//   document.write("<br>")
+//   document.write("<br>");
 // }
 
 // [PRIME NO IN JS WITH NESTED LOOP]:
 
-// let n= Number(prompt("Enter a number"));
-// let i,j;
-// document.write(`Prime No list upto ${n} is <br>`)
-// for(i=2;i<=n;i++){
-//   for(j=2;j<=i-1;j++){
-//     if (i%j==0){
+// let n = Number(prompt("Enter a number"));
+// let i, j;
+// document.write(`Prime No list upto ${n} is <br>`);
+// for (i = 2; i <= n; i++) {
+//   for (j = 2; j <= i - 1; j++) {
+//     if (i % j == 0) {
 //       break;
 //     }
 //   }
-// if(i===j){
-//   document.write(i + "<br>")
-// }
+//   if (i === j) {
+//     document.write(i + "<br>");
+//   }
 // }
 
 // for (let i = 5; i >= 1; i--) {
-//   for (let j = i; j >= 1; j) {
+//   for (let j = i; j >= 1; j--) {
 //     document.write(j);
 //   }
 //   document.write("<br>");
@@ -539,11 +539,11 @@ for (let a = 1; a <= 5; a += 1) {
 
 // [EXAMPLE]:
 
-// for(var a=5;a>=1;a--){
-//       for(var b=a; b>=1; b--){
-//             document.write(b)
-//       }
-//       document.write("<br>")
+// for (var a = 5; a >= 1; a--) {
+//   for (var b = a; b >= 1; b--) {
+//     document.write(b);
+//   }
+//   document.write("<br>");
 // }
 
 // [ARRAYS]:
@@ -555,13 +555,9 @@ for (let a = 1; a <= 5; a += 1) {
 // let c = 30;
 
 // let numbers = [10, 20, 30];
-// document.write(a)
+// document.write(numbers[1]);
 
 // [Ex#2]:
-
-// function newline() {
-//   document.write("<br>");
-// }
 
 // let fruits = ["apple", "banana", "mango", "Strawbery"];
 // document.write(fruits[0]);
