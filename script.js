@@ -1001,9 +1001,9 @@ let heroes = ["spiderman", "ironman", "hulk", "thor"];
 
 // let para = document.querySelector("p");
 // console.log(para.getAttribute("class"));
-// console.log(para.setAttribute("class", "newClass"));
-// console.log(para.classList.add("newClass"));
-// console.log(para.classList.remove("newClass"));
+// para.setAttribute("class", "newClass");
+// para.classList.add("newClass");
+// para.classList.remove("newClass");
 // console.log(para.classList);
 
 //[EVENTS IN BROWSER]: //change in state of an object
@@ -1014,17 +1014,17 @@ let heroes = ["spiderman", "ironman", "hulk", "thor"];
 // };
 
 // let div = document.querySelector("div");
+// div.style.backgroundColor = "red";
 // div.onmouseover = () => {
 //   console.log("You just hover the box");
 // };
-
 //[EVENT OBJECT]:
 
 // div.onclick = (evt) => {
 //   console.log(evt);
 //   console.log(evt.type);
 //   console.log(evt.target);
-//   //   console.log(evt.clientX, evt.clientY);
+//   console.log(evt.clientX, evt.clientY);
 // };
 
 //[EVENT LISTNER]:
@@ -1092,7 +1092,7 @@ let heroes = ["spiderman", "ironman", "hulk", "thor"];
 //   },
 // };
 // console.log(student);
-// console.log(student.printMarks());
+// student.printMarks();
 
 // const employe = {
 //   calcTax() {
@@ -1106,26 +1106,26 @@ let heroes = ["spiderman", "ironman", "hulk", "thor"];
 
 // employe2.__proto__ = employe;
 // console.log(employe2);
-// console.log(employe2.calcTax());
+// employe2.calcTax();
 
 // [CLASS(Class is a program-code template for creating objects.Those object will have some state (variable) and some behaviour (functions) inside it)]:
 
-// class ToyotaCar {
-//   constructor(carname, milage) {
-//     console.log("Car created");
-//     this.carname = carname;
-//     this.milage = milage;
-//   }
-//   start() {
-//     console.log("Car started");
-//   }
-//   stop() {
-//     console.log("Car stopped");
-//   }
-//   setbrand(Brand) {
-//     this.brand = Brand;
-//   }
-// }
+class ToyotaCar {
+  constructor(carname, milage) {
+    console.log("Car created");
+    this.carname = carname;
+    this.milage = milage;
+  }
+  start() {
+    console.log("Car started");
+  }
+  stop() {
+    console.log("Car stopped");
+  }
+  setbrand(Brand) {
+    this.brand = Brand;
+  }
+}
 
 // let fortuner = new ToyotaCar("fortuner", "10kmph");
 // console.log(fortuner);
