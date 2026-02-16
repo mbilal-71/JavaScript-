@@ -1235,15 +1235,8 @@ let heroes = ["spiderman", "ironman", "hulk", "thor"];
 
 // [CALLBACK FUNCTION]:
 
-// function sum(a, b) {
-//   console.log(a + b);
-// }
-// function Calculate(a, b, sumCallback) {
-//   sumCallback(a, b);
-// }
-// Calculate(5, 7, sum);
-
 // 1) Callback functions (logic)
+
 // function add(a, b) {
 //   console.log("Addition:", a + b);
 // }
@@ -1286,7 +1279,7 @@ let heroes = ["spiderman", "ironman", "hulk", "thor"];
 //       break;
 //     case "divide":
 //       if (b !== 0) console.log("Division:", a / b);
-//       else console.log("Division by zero not allowed!");
+//       else console.warn("Division by zero not allowed!");
 //       break;
 //   }
 // }
@@ -1299,23 +1292,24 @@ let heroes = ["spiderman", "ironman", "hulk", "thor"];
 // [CALLBACK-HELL]: //NESTED CALL-BACK(Nested callbacks stack below one another forming a pyramid structure This style of programming becomes difficult to understand & manage)
 
 // takes 2 sec to send data
-// function getData(dataid) {
-//   return new Promise((resolve, reject) => {
-//     setTimeout(() => {
-//       console.log(dataid);
-//       resolve("success");
-//     }, 2000);
-//   });
-// }
+
+function getData(dataid) {
+  return new Promise((resolve, reject) => {
+    setTimeout(() => {
+      console.log(dataid);
+      resolve("success");
+      reject("dismissed");
+    }, 2000);
+  });
+}
 
 // getData(7110, () => {
-//   // one callback function inside other
 //   getData(7100, () => {
 //     getData(7520);
 //   });
 // });
 
-// let result = getData(7110);
+// let result = getData(7110, 7100, 7521);
 // console.log(result);
 
 // [ASYNC-AWAIT]:
@@ -1328,7 +1322,7 @@ let heroes = ["spiderman", "ironman", "hulk", "thor"];
 //   console.log("Loading data 3...");
 //   await getData(3);
 // }
-// console.log(getAllData());
+// getAllData();
 
 // [IIFE]:(Immediately Invoked Function Expression is the Javascript function that run as soon as it is defined)
 
@@ -1353,17 +1347,18 @@ let heroes = ["spiderman", "ironman", "hulk", "thor"];
 // [PROMISE CHAIN]:
 
 // getData(1)
-//   .then((res) => {
+//   .then(() => {
 //     return getData(2);
 //   })
-//   .then((res) => {
+//   .then(() => {
 //     return getData(3);
 //   })
-//   .then((res) => {
+//   .then(() => {
 //     return getData(4);
 //   })
 //   .then((res) => {
 //     console.log(res);
+//   });
 
 // [PROMISES(Promises for "eventual" completion of task. it is an object in Javascript. it is solution to callback)]:
 
