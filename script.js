@@ -1409,7 +1409,7 @@ function getData(dataid) {
 
 // [ASYNC-AWAIT]:
 
-// async function hello(params) {
+// async function hello() {
 //   console.log("hello world!");
 // }
 // console.log(hello());
@@ -1423,8 +1423,8 @@ function getData(dataid) {
 //   });
 // }
 // async function getweatherdata() {
-//   await api();//1st call
-//   await api();//2nd call
+//   await api(); //1st call
+//   await api(); //2nd call
 // }
 // console.log(getweatherdata());
 
@@ -1442,17 +1442,15 @@ function getData(dataid) {
 //   console.log(data.message);
 //   factpara.innerText = data.message;
 // };
-// getFacts();
 
 // function getFacts() {
-//   fetch(URL)
-//     .then((response) => {
-//       return response.json();
-//     })
-//     .then((data) => {
-//       console.log(data);
-//       factpara.innerText = data.message;
-//     });
+//   fetch(URL).then((response) => {
+//     return response.json();
+//   });
+// .then((data) => {
+//   // console.log(data);
+//   factpara.innerText = data.message;
+// });
 // }
 
 // btn.addEventListener("click", getFacts);
@@ -1461,10 +1459,10 @@ function getData(dataid) {
 
 // json() method: (Returns a second promise that resolves with the result of parsing the response body text as JSON. input is JSON output is JS object)
 
-//     let jsonData = `{
+// let jsonData = `{
 //   "name": "Ali",
 //   "age": 20
 // }`;
 
-//     let obj = JSON.parse(jsonData)
-//     console.log(obj.age);
+// let obj = JSON.parse(jsonData);
+// console.log(obj);
