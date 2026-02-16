@@ -1366,19 +1366,19 @@ function getData(dataid) {
 //   return new Promise((resolve, reject) => {
 //     console.log("I am a Promise");
 //     resolve("Success");
-//       reject("Some unknown error occured");
+//     reject("Some unknown error occured");
 //   });
 // };
 
 // let promise = getPromise();
+// console.log(promise);
+
 // promise.then((res) => {
 //   console.log("Promise fulfilled", res);
 // });
 // promise.catch((err) => {
-//   console.log("Promise unfulfilled", err);
+//   console.error("Promise unfulfilled", err);
 // });
-
-// console.log(promise);
 
 // [PROMISE CHAINing]:
 
