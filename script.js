@@ -1430,7 +1430,7 @@ function getData(dataid) {
 
 //[FETCH-API(Application Programming Interference)]:
 
-const URL = "https://dog.ceo/api/breeds/image/random";
+// const URL = "https://dog.ceo/api/breeds/image/random";
 // const factpara = document.querySelector("#fact");
 // const btn = document.querySelector("#btn");
 
@@ -1443,17 +1443,20 @@ const URL = "https://dog.ceo/api/breeds/image/random";
 //   factpara.innerText = data.message;
 // };
 
-function getFacts() {
-  fetch(URL)
-    .then((response) => {
-      return response.json();
-    })
-    .then((data) => {
-      console.log(data);
-      factpara.innerText = data.message;
-    });
-}
-
+// function getFacts() {
+//   fetch(URL)
+//     .then((response) => {
+//       console.log(response);
+//       return response.json();
+//     })
+//     .then((data) => {
+//       console.log(data);
+//       // factpara.innerText = data.message;
+//     });
+// }
+// let btn = document.createElement("button");
+// btn.innerText = "Click Me!";
+// document.body.appendChild(btn);
 // btn.addEventListener("click", getFacts);
 
 // [JSON File(Javascript Object Notation)]:
