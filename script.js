@@ -1110,22 +1110,22 @@ let heroes = ["spiderman", "ironman", "hulk", "thor"];
 
 // [CLASS(Class is a program-code template for creating objects.Those object will have some state (variable) and some behaviour (functions) inside it)]:
 
-class ToyotaCar {
-  constructor(carname, milage) {
-    console.log("Car created");
-    this.carname = carname;
-    this.milage = milage;
-  }
-  start() {
-    console.log("Car started");
-  }
-  stop() {
-    console.log("Car stopped");
-  }
-  setbrand(Brand) {
-    this.brand = Brand;
-  }
-}
+// class ToyotaCar {
+//   constructor(carname, milage) {
+//     console.log("Car created");
+//     this.carname = carname;
+//     this.milage = milage;
+//   }
+//   start() {
+//     console.log("Car started");
+//   }
+//   stop() {
+//     console.log("Car stopped");
+//   }
+//   setbrand(Brand) {
+//     this.brand = Brand;
+//   }
+// }
 
 // let fortuner = new ToyotaCar("fortuner", "10kmph");
 // console.log(fortuner);
@@ -1134,7 +1134,7 @@ class ToyotaCar {
 // fortuner.setbrand("Toyota");
 // console.log(fortuner.brand);
 
-// let lexus = new ToyotaCar();
+// let lexus = new ToyotaCar("lexus", "10kmph");
 // console.log(lexus);
 // lexus.setbrand("lexus");
 // console.log(lexus.brand);
@@ -1151,7 +1151,6 @@ class ToyotaCar {
 // let obj = new child();
 // console.log(obj);
 // obj.hello();
-// console.log(obj.hello());
 
 // class person {
 //   constructor(name) {
@@ -1177,11 +1176,11 @@ class ToyotaCar {
 //   }
 // }
 
-// let obj0 = new engineer();
-// console.log(obj);
+// let obj0 = new engineer("Ali", "Software");
+// console.log(obj0);
 // obj0.work();
 // obj0.eat();
-// obj.sleep();
+// obj0.sleep();
 
 // [SUPER KEYWORD]:(The super keyword is used to call the constructor of its parent class to access the parents properties and methods):
 
