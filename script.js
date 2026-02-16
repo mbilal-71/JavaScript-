@@ -1165,6 +1165,8 @@ let heroes = ["spiderman", "ironman", "hulk", "thor"];
 //   }
 // }
 
+// [SUPER KEYWORD]:(The super keyword is used to call the constructor of its parent class to access the parents properties and methods):
+
 // class engineer extends person {
 //   constructor(name, branch) {
 //     super(name);
@@ -1182,15 +1184,14 @@ let heroes = ["spiderman", "ironman", "hulk", "thor"];
 // obj0.eat();
 // obj0.sleep();
 
-// [SUPER KEYWORD]:(The super keyword is used to call the constructor of its parent class to access the parents properties and methods):
-
 // let obj = new engineer("ahmed", "chem eng");
 // let obj1 = new person("chem eng");
 // console.log(obj);
 // console.log(obj1);
 
 // [ERROR HANDLING]:
-// try-catch
+// Try-Catch
+
 // let a = 5;
 // let b = 10;
 // console.log(a);
@@ -1199,9 +1200,8 @@ let heroes = ["spiderman", "ironman", "hulk", "thor"];
 // try {
 //   console.log(a + c);
 // } catch (err) {
-//   console.log(err);
+//   console.error(err);
 // }
-
 // console.log(b);
 // console.log(b);
 
