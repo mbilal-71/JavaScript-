@@ -1444,13 +1444,14 @@ const URL = "https://dog.ceo/api/breeds/image/random";
 // };
 
 function getFacts() {
-  fetch(URL).then((response) => {
-    return response.json();
-  });
-  // .then((data) => {
-  //   console.log(data);
-  //   factpara.innerText = data.message;
-  // });
+  fetch(URL)
+    .then((response) => {
+      return response.json();
+    })
+    .then((data) => {
+      console.log(data);
+      factpara.innerText = data.message;
+    });
 }
 
 // btn.addEventListener("click", getFacts);
