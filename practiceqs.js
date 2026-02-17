@@ -34,11 +34,27 @@
 // console.log(admin1);
 // admin1.editData();
 // console.log(DATA);
+// admin1.viewData();
 
-// let student1 = new User("ahmed", "123@gmail.com");
+// class student extends Admin {
+//   constructor(name, email, role) {
+//     super(name, email, role);
+//   }
+// }
+
+// let student1 = new student("ahmed", "123@gmail.com", "student");
+//  let student2 = new User("ali", "456S@gmail.com");
+// console.log(student1);
+// student1.viewData();
+// student1.editData();
+// console.log(DATA);
+
+// let student1 = new User("ahmed", "123@gmail.com", "student");
 // let student2 = new User("ali", "456S@gmail.com");
 // console.log(student1);
 // student1.viewData();
+// student1.editData();
+// console.log(DATA);
 
 // const countVowels = (str) => {
 //   let count = 0;
