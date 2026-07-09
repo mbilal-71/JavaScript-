@@ -73,7 +73,7 @@
 
 // console.log(countVowels("ahmed"));
 
-let ch = '8';
+let ch = '*';
 
 if ((ch >= 'A' && ch <= 'Z') || (ch >= 'a' && ch <= 'z')) {
     console.log("Alphabet");
