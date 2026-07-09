@@ -480,26 +480,26 @@ function newline() {
 
 // [STARS EXAMPLE]:
 
-// for (var a = 5; a >= 1; a--) {
-//   for (var c = 5; c >= 1 + a; c--) {
-//     document.write("&nbsp;");
-//   }
-//   for (var b = 1; b <= a; b++) {
-//     document.write("*" + " ");
-//   }
-//   document.write("<br>");
-// }
+for (var a = 5; a >= 1; a--) {
+  for (var c = 5; c >= 1 + a; c--) {
+    document.write("&nbsp;");
+  }
+  for (var b = 1; b <= a; b++) {
+    document.write("*" + " ");
+  }
+  document.write("<br>");
+}
 
-// for (var a = 1; a <= 5; a++) {
-//   for (c = 1; c <= 5 - a; c++) {
-//     document.write("&nbsp;");
-//   }
+for (var a = 1; a <= 5; a++) {
+  for (c = 1; c <= 5 - a; c++) {
+    document.write("&nbsp;");
+  }
 
-//   for (var b = 1; b <= a; b++) {
-//     document.write("*" + " ");
-//   }
-//   document.write("<br>");
-// }
+  for (var b = 1; b <= a; b++) {
+    document.write("*" + " ");
+  }
+  document.write("<br>");
+}
 
 // [CLICKED FUNCTION]:
 
