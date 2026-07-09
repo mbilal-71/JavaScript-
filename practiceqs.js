@@ -73,12 +73,22 @@
 
 // console.log(countVowels("ahmed"));
 
-let ch = '*';
+// let ch = '*';
 
-if ((ch >= 'A' && ch <= 'Z') || (ch >= 'a' && ch <= 'z')) {
-    console.log("Alphabet");
-} else if (ch >= '0' && ch <= '9') {
-    console.log("Digit");
-} else {
-    console.log("Special Character");
+// if ((ch >= 'A' && ch <= 'Z') || (ch >= 'a' && ch <= 'z')) {
+//     console.log("Alphabet");
+// } else if (ch >= '0' && ch <= '9') {
+//     console.log("Digit");
+// } else {
+//     console.log("Special Character");
+// }
+
+let i=1;
+
+while(i<=10){
+
+console.log("7 x",i,"=",7*i);
+
+i++;
+
 }
