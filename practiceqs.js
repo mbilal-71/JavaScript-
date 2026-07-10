@@ -83,12 +83,171 @@
 //     console.log("Special Character");
 // }
 
-let i=1;
+// let i=1;
 
-while(i<=10){
+// while(i<=10){
 
-console.log("7 x",i,"=",7*i);
+// console.log("7 x",i,"=",7*i);
 
-i++;
+// i++;
 
-}
+
+// let i= 0;
+//  while(i<=10){
+//     console.log("2 x",i,"=",2*i);
+//     i++;
+//  }
+
+// PATTERN QUESTIONS:
+
+// #1
+
+// for (let i = 1; i <= 5; i++) {
+
+//     let pattern = "";
+
+//     for (let j = 1; j <= i; j++) {
+
+//         pattern += j;
+
+//     }
+
+//     console.log(pattern);
+
+// }
+
+// #2
+
+// for (let i = 5; i >= 1; i--) {
+
+//     let pattern = "";
+
+//     for (let j = 1; j <= i; j++) {
+
+//         pattern += j;
+
+//     }
+
+//     console.log(pattern);
+
+// }
+
+// #3
+
+// for (let i = 5; i >= 1; i--) {
+
+//     let pattern = "";
+
+//     for (let j = i; j >= 1; j--) {
+
+//         pattern += j;
+
+//     }
+
+//     console.log(pattern);
+
+// }
+
+// #4
+
+// for (let i = 1; i <= 5; i++) {
+
+//     let pattern = "";
+
+//     for (let j = 1; j <= i; j++) {
+
+//         pattern += i;
+
+//     }
+
+//     console.log(pattern);
+
+// }
+
+// #5
+
+// for (let i = 5; i >= 1; i--) {
+
+//     let pattern = "";
+
+//     for (let j = 1; j <= i; j++) {
+
+//         pattern += i;
+
+//     }
+
+//     console.log(pattern);
+
+// }
+
+// #6
+
+// for (let i = 1; i <= 5; i++) {
+
+//     let pattern = "";
+
+//     for (let j = 1; j <= i; j++) {
+
+//         pattern += "*";
+
+//     }
+
+//     console.log(pattern);
+
+// }
+
+// #7
+
+// for (let i = 5; i >= 1; i--) {
+
+//     let pattern = "";
+
+//     for (let j = 1; j <= i; j++) {
+
+//         pattern += "*";
+
+//     }
+
+//     console.log(pattern);
+
+// }
+
+// #8
+
+// for (let i = 1; i <= 5; i++) {
+
+//     let pattern = "";
+
+//     for (let j = 1; j <= 5; j++) {
+
+//         pattern += "*";
+
+//     }
+
+//     console.log(pattern);
+
+// }
+
+// #9
+
+// for (let i = 1; i <= 4; i++) {
+
+//     let pattern = "";
+
+//     for (let j = 1; j <= 4; j++) {
+
+//         if (j % 2 == 1) {
+
+//             pattern += "x";
+
+//         } else {
+
+//             pattern += "o";
+
+//         }
+
+//     }
+
+//     console.log(pattern);
+
+// }
