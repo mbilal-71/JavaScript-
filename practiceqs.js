@@ -116,23 +116,23 @@
 
 // }
 
-// #2
+// #2:
 
-// for (let i = 5; i >= 1; i--) {
+for (let i = 5; i >= 1; i--) {
 
-//     let pattern = "";
+    let pattern = "";
 
-//     for (let j = 1; j <= i; j++) {
+    for (let j = 1; j <= i; j++) {
 
-//         pattern += j;
+        pattern += j;
 
-//     }
+    }
 
-//     console.log(pattern);
+    console.log(pattern);
 
-// }
+}
 
-// #3
+// #3:
 
 // for (let i = 5; i >= 1; i--) {
 
@@ -183,17 +183,11 @@
 // #6
 
 // for (let i = 1; i <= 5; i++) {
-
 //     let pattern = "";
-
 //     for (let j = 1; j <= i; j++) {
-
 //         pattern += "*";
-
 //     }
-
 //     console.log(pattern);
-
 // }
 
 // #7
