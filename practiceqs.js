@@ -224,24 +224,24 @@ for (let i = 5; i >= 1; i--) {
 
 // #9
 
-// for (let i = 1; i <= 4; i++) {
+for (let i = 1; i <= 4; i++) {
 
-//     let pattern = "";
+    let pattern = "";
 
-//     for (let j = 1; j <= 4; j++) {
+    for (let j = 1; j <= 4; j++) {
 
-//         if (j % 2 == 1) {
+        if (j % 2 == 1) {
 
-//             pattern += "x";
+            pattern += "x";
 
-//         } else {
+        } else {
 
-//             pattern += "o";
+            pattern += "o";
 
-//         }
+        }
 
-//     }
+    }
 
-//     console.log(pattern);
+    console.log(pattern);
 
-// }
+}
